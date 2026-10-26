@@ -1,0 +1,11 @@
+/* Claude — punto de entrada de estilos */
+@import './styles/tokens.css';
+@import './styles/base.css';
+@import './styles/paper.css';
+@import './styles/sky.css';
+@import './styles/festive.css';
+@import './styles/lobby.css';
+@import './styles/xp.css';
+@import './styles/room.css';
+@import './styles/archive.css';
+@import './styles/forms.css';

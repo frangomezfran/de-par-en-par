@@ -1,0 +1,210 @@
+/* ==========================================================================
+   La pieza — ilustración a pantalla completa con objetos clickeables
+   (sin carteles: el objeto se ilumina y se levanta apenas al pasar)
+   ========================================================================== */
+
+.scene {
+  --ratio: calc(2752 / 1536);
+  position: relative;
+  height: 100svh;
+  overflow: hidden;
+  background: #1d1a18;
+}
+
+.scene__viewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Cubre la pantalla: en monitores 16:9 se ve entera; en otras proporciones se
+   recorta lo mínimo y parejo */
+.scene__stage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(100vw, 100svh * var(--ratio));
+  aspect-ratio: 2752 / 1536;
+  transform: translate(-50%, -50%);
+}
+
+/* Pantallas verticales: la pieza ocupa todo el alto y se recorre de costado */
+@media (max-aspect-ratio: 1 / 1) {
+  .scene__viewport {
+    display: block;
+    overflow-x: auto;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+  }
+
+  .scene__viewport::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scene__stage {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    transform: none;
+  }
+}
+
+.scene__base {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  user-select: none;
+}
+
+/* ---------- Ventana ---------- */
+
+.scene__pane {
+  position: absolute;
+  overflow: hidden;
+}
+
+.scene__sky {
+  position: absolute;
+  transition: filter 0.4s var(--ease-out);
+}
+
+.scene__stage.is-window-hover .scene__sky {
+  filter: brightness(1.12) saturate(1.1);
+}
+
+/* ---------- Objetos ---------- */
+
+.scene__obj {
+  position: absolute;
+  z-index: 2;
+  max-width: none;
+  pointer-events: none;
+  user-select: none;
+  transform-origin: 50% 100%;
+  transition:
+    transform 0.35s var(--ease-out),
+    filter 0.35s var(--ease-out);
+}
+
+.scene__obj.is-hover {
+  transform: translateY(-0.6%) scale(1.025);
+  filter: drop-shadow(0 6px 10px rgba(30, 15, 5, 0.45)) brightness(1.08) saturate(1.06);
+}
+
+/* al entrar, los objetos clickeables destellan de a uno, como quien recorre la pieza con la mirada */
+.scene__stage.is-intro .scene__obj:not(.scene__obj--lamp) {
+  animation: object-glint 1.2s var(--ease-out) both;
+  animation-delay: calc(var(--i, 0) * 130ms + 450ms);
+}
+
+@keyframes object-glint {
+  0%, 100% { filter: none; }
+  45% { filter: drop-shadow(0 0 12px rgba(255, 236, 180, 0.95)) brightness(1.08); }
+}
+
+/* ---------- Zonas de clic ---------- */
+
+.scene__hits {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+}
+
+.scene__hits a {
+  cursor: pointer;
+  outline: none;
+}
+
+.scene__hits polygon,
+.scene__hits rect {
+  fill: transparent;
+  stroke: transparent;
+}
+
+/* foco con teclado: contorno punteado sobre la silueta */
+.scene__hits a:focus-visible polygon,
+.scene__hits a:focus-visible rect {
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-dasharray: 10 8;
+  filter: drop-shadow(0 0 2px #000);
+}
+
+/* ---------- Noche y lámpara ---------- */
+
+.scene__night,
+.scene__glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1.1s ease, background 1.1s ease;
+}
+
+.scene__night {
+  z-index: 20;
+  mix-blend-mode: multiply;
+  background: #3d4466;
+}
+
+.scene__glow {
+  z-index: 21;
+  mix-blend-mode: screen;
+  background:
+    radial-gradient(circle at var(--lx) var(--ly), rgba(255, 220, 160, 0.85) 0, rgba(255, 196, 120, 0.3) 3%, rgba(255, 190, 110, 0) 12%),
+    radial-gradient(ellipse 16% 11% at var(--lx) calc(var(--ly) + 7%), rgba(255, 200, 130, 0.38) 0, rgba(255, 200, 130, 0) 100%);
+}
+
+.scene__stage.is-night .scene__night {
+  opacity: 0.9;
+}
+
+/* lámpara prendida de noche: la pieza se ilumina cálida alrededor del escritorio */
+.scene__stage.is-night.is-lit .scene__night {
+  background: radial-gradient(circle at var(--lx) calc(var(--ly) + 6%), #ffffff 0, #f6e4c4 10%, #b3aebb 28%, #6a6f90 50%, #464d70 78%);
+}
+
+.scene__stage.is-lit .scene__glow {
+  opacity: 0.9;
+}
+
+.scene__stage.is-night.is-lit .scene__glow {
+  opacity: 1;
+}
+
+/* ---------- Chrome mínimo ---------- */
+
+.scene__chrome {
+  position: fixed;
+  top: clamp(10px, 2vw, 20px);
+  left: clamp(10px, 2vw, 20px);
+  right: clamp(10px, 2vw, 20px);
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.scene__chrome > * {
+  pointer-events: auto;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.scene__chrome > *:hover,
+.scene__chrome > *:focus-visible {
+  opacity: 1;
+}
+
+.scene__who {
+  border: 0;
+  cursor: pointer;
+}

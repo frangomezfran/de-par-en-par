@@ -1,0 +1,239 @@
+/* ==========================================================================
+   Ventanita de los 2000 (Windows XP "Luna") para pedir la contraseña
+   ========================================================================== */
+
+.xp {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+  font-family: Tahoma, 'Segoe UI', Verdana, sans-serif;
+  font-size: 13px;
+  color: #000;
+}
+
+.xp::backdrop {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.xp__window {
+  width: min(380px, calc(100vw - 24px));
+  border: 1px solid #0831d9;
+  border-radius: 8px 8px 0 0;
+  background: #0831d9;
+  box-shadow: 4px 6px 18px rgba(0, 0, 0, 0.45);
+  animation: xp-in 0.18s ease-out;
+}
+
+.xp__window.is-shaking {
+  animation: xp-shake 0.35s ease-in-out;
+}
+
+@keyframes xp-in {
+  from { transform: scale(0.96); opacity: 0; }
+}
+
+@keyframes xp-shake {
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+
+.xp__titlebar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 4px 0 8px;
+  border-radius: 7px 7px 0 0;
+  background: linear-gradient(to bottom, #0997ff 0%, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7 100%);
+  color: #fff;
+  font-family: 'Trebuchet MS', Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-shadow: 1px 1px #0f1089;
+}
+
+/* llavecita dibujada con CSS */
+.xp__title-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+
+.xp__title-icon::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #ffd84a;
+  border-radius: 50%;
+}
+
+.xp__title-icon::after {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 7px;
+  width: 7px;
+  height: 2px;
+  background: #ffd84a;
+  box-shadow: 4px 2px 0 -0px #ffd84a;
+}
+
+.xp__title {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.xp__close {
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: linear-gradient(135deg, #e97b55, #c4381b 60%, #b02d10);
+  color: #fff;
+  font: 700 12px/1 Tahoma, sans-serif;
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.xp__close:hover {
+  filter: brightness(1.15);
+}
+
+.xp__body {
+  display: grid;
+  gap: 12px;
+  padding: 14px 14px 12px;
+  border: 3px solid #0831d9;
+  border-top: 0;
+  background: #ece9d8;
+}
+
+.xp__message {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  line-height: 1.4;
+}
+
+/* letra recortada, como las de las puertas */
+.xp__tile {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 40px;
+  height: 44px;
+  background: #ece3cf;
+  color: #2a2420;
+  font: 700 26px/1 Georgia, serif;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  transform: rotate(-4deg);
+  clip-path: polygon(3% 2%, 97% 0, 100% 96%, 4% 100%);
+}
+
+.xp__field {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.xp__field input {
+  height: 22px;
+  padding: 2px 4px;
+  border: 1px solid #7f9db9;
+  background: #fff;
+  font: 13px Tahoma, sans-serif;
+}
+
+.xp__field input:focus {
+  outline: none;
+  border-color: #3c7fb1;
+}
+
+/* globito de error al estilo XP (debajo del campo, sin tapar los botones) */
+.xp__balloon {
+  position: relative;
+  grid-column: 2;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 9px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  background: #ffffe1;
+  font-size: 12px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.xp__balloon::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 18px;
+  border: 8px solid transparent;
+  border-top: 0;
+  border-bottom-color: #000;
+}
+
+.xp__balloon-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ff8a7a, #d11);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.xp__note {
+  margin-top: 4px;
+  color: #444;
+  font-size: 11px;
+}
+
+.xp__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.xp__btn {
+  min-width: 75px;
+  height: 23px;
+  padding: 0 10px;
+  border: 1px solid #003c74;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #fff 0%, #ecebe6 86%, #d6d0c5 100%);
+  font: 13px Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.xp__btn:hover {
+  box-shadow: inset 0 -1px 0 1px #f8b330, inset 0 1px 0 1px #fce8a8;
+}
+
+.xp__btn--default {
+  box-shadow: inset 0 0 0 1px #a6c8f0;
+}
+
+.xp__btn:focus-visible {
+  outline: 1px dotted #000;
+  outline-offset: -4px;
+}
+
+.xp__btn:disabled {
+  color: #999;
+}

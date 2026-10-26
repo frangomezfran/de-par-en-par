@@ -1,0 +1,36 @@
+{
+ "width": 3168,
+ "height": 1344,
+ "leaves": {
+  "mariana": {
+   "file": "/assets/rooms/leaf-mariana.jpg",
+   "x": 1024,
+   "y": 262,
+   "w": 392,
+   "h": 894
+  },
+  "franco": {
+   "file": "/assets/rooms/leaf-franco.jpg",
+   "x": 1756,
+   "y": 282,
+   "w": 388,
+   "h": 878
+  }
+ },
+ "image": "/assets/rooms/lobby.jpg",
+ "imageSmall": "/assets/rooms/lobby-1600.jpg",
+ "doors": {
+  "mariana": [
+   988,
+   222,
+   419,
+   943
+  ],
+  "franco": [
+   1717,
+   241,
+   420,
+   924
+  ]
+ }
+}

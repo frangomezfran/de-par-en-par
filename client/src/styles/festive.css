@@ -1,0 +1,178 @@
+/* ==========================================================================
+   La ventana en días festivos: una capa encima del cielo real
+   ========================================================================== */
+
+.fest {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.fest > span {
+  position: absolute;
+}
+
+/* ---------- Halloween ---------- */
+
+.fest--halloween {
+  background: linear-gradient(to bottom, rgba(60, 20, 80, 0.55), rgba(220, 110, 30, 0.35));
+  mix-blend-mode: normal;
+}
+
+.fest__moon {
+  top: 10%;
+  left: 50%;
+  width: 34%;
+  aspect-ratio: 1;
+  margin-left: -17%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 38%, #ffd38a 0, #f59a2c 55%, #c75d12 100%);
+  box-shadow: 0 0 30px 10px rgba(255, 150, 50, 0.45);
+}
+
+.fest__bat {
+  width: 16%;
+  aspect-ratio: 2 / 1;
+  background: #1b1320;
+  clip-path: polygon(0 20%, 18% 35%, 30% 10%, 42% 40%, 50% 30%, 58% 40%, 70% 10%, 82% 35%, 100% 20%, 86% 70%, 70% 55%, 58% 80%, 50% 65%, 42% 80%, 30% 55%, 14% 70%);
+  animation: bat-fly 7s ease-in-out infinite;
+}
+
+.fest__bat--a { top: 20%; left: 8%; }
+.fest__bat--b { top: 42%; left: 62%; width: 11%; animation-delay: -2.3s; animation-duration: 6s; }
+.fest__bat--c { top: 58%; left: 24%; width: 9%; animation-delay: -4.1s; animation-duration: 8s; }
+
+@keyframes bat-fly {
+  0%, 100% { transform: translate(0, 0) scaleY(1); }
+  25% { transform: translate(30%, -40%) scaleY(0.6); }
+  50% { transform: translate(60%, 10%) scaleY(1); }
+  75% { transform: translate(20%, 30%) scaleY(0.6); }
+}
+
+/* ---------- Navidad: guirnalda de lucecitas ---------- */
+
+.fest__wire {
+  top: 0;
+  left: -5%;
+  right: -5%;
+  height: 22%;
+  border-bottom: 2px solid rgba(30, 50, 30, 0.8);
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+}
+
+.fest__lights {
+  top: 4%;
+  left: 0;
+  right: 0;
+  height: 26%;
+  background-image:
+    radial-gradient(circle at 6% 52%, #ff4d4d 0 3.2%, transparent 4.5%),
+    radial-gradient(circle at 22% 72%, #ffd23f 0 3.2%, transparent 4.5%),
+    radial-gradient(circle at 40% 84%, #4dd6ff 0 3.2%, transparent 4.5%),
+    radial-gradient(circle at 60% 84%, #7dff6b 0 3.2%, transparent 4.5%),
+    radial-gradient(circle at 78% 72%, #ff7ad9 0 3.2%, transparent 4.5%),
+    radial-gradient(circle at 94% 52%, #ffd23f 0 3.2%, transparent 4.5%);
+  filter: drop-shadow(0 0 4px rgba(255, 240, 180, 0.9));
+  animation: twinkle 1.6s steps(2, jump-none) infinite;
+}
+
+.fest__lights--alt {
+  background-image:
+    radial-gradient(circle at 14% 64%, #7dff6b 0 3%, transparent 4.2%),
+    radial-gradient(circle at 31% 80%, #ff4d4d 0 3%, transparent 4.2%),
+    radial-gradient(circle at 50% 86%, #ffd23f 0 3%, transparent 4.2%),
+    radial-gradient(circle at 69% 80%, #4dd6ff 0 3%, transparent 4.2%),
+    radial-gradient(circle at 86% 64%, #ff4d4d 0 3%, transparent 4.2%);
+  animation-delay: -0.8s;
+}
+
+@keyframes twinkle {
+  0% { opacity: 1; }
+  100% { opacity: 0.25; }
+}
+
+/* ---------- Año Nuevo: fuegos artificiales ---------- */
+
+.fest--anio-nuevo {
+  background: linear-gradient(to bottom, rgba(10, 14, 40, 0.55), transparent 70%);
+}
+
+.fest__burst {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  color: #ffd23f;
+  box-shadow:
+    0 -26px 0 0 currentColor, 18px -18px 0 0 currentColor, 26px 0 0 0 currentColor, 18px 18px 0 0 currentColor,
+    0 26px 0 0 currentColor, -18px 18px 0 0 currentColor, -26px 0 0 0 currentColor, -18px -18px 0 0 currentColor,
+    0 -14px 0 0 #fff, 10px -10px 0 0 #fff, 14px 0 0 0 #fff, 10px 10px 0 0 #fff,
+    0 14px 0 0 #fff, -10px 10px 0 0 #fff, -14px 0 0 0 #fff, -10px -10px 0 0 #fff;
+  animation: burst 2.6s ease-out infinite;
+}
+
+.fest__burst--a { top: 26%; left: 28%; }
+.fest__burst--b { top: 18%; left: 70%; color: #ff5fa2; animation-delay: -0.9s; }
+.fest__burst--c { top: 46%; left: 52%; color: #6be3ff; animation-delay: -1.7s; }
+
+@keyframes burst {
+  0% { transform: scale(0.1); opacity: 0; }
+  10% { opacity: 1; }
+  70% { transform: scale(1.6); opacity: 0.9; }
+  100% { transform: scale(1.9) translateY(6px); opacity: 0; }
+}
+
+/* ---------- Cumpleaños: globos y papel picado ---------- */
+
+.fest__balloon {
+  bottom: -30%;
+  width: 18%;
+  aspect-ratio: 4 / 5;
+  border-radius: 50% 50% 48% 52% / 58% 58% 42% 42%;
+  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.7) 0 8%, transparent 9%), var(--b, #ff6b8a);
+  animation: balloon-up 9s linear infinite;
+}
+
+/* el hilo */
+.fest__balloon::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 1px;
+  height: 120%;
+  background: rgba(60, 60, 60, 0.6);
+}
+
+.fest__balloon--a { left: 12%; --b: #ff6b8a; }
+.fest__balloon--b { left: 44%; --b: #ffd23f; animation-delay: -3s; animation-duration: 10s; }
+.fest__balloon--c { left: 72%; --b: #6bb8ff; animation-delay: -6s; animation-duration: 8s; }
+
+.fest--cumple-mariana .fest__balloon--b { --b: #c4797f; }
+.fest--cumple-franco .fest__balloon--b { --b: #6f9a92; }
+
+@keyframes balloon-up {
+  0% { transform: translate(0, 0) rotate(-4deg); }
+  50% { transform: translate(8%, -120%) rotate(4deg); }
+  100% { transform: translate(-4%, -260%) rotate(-3deg); }
+}
+
+.fest__confetti {
+  inset: 0;
+  background-image:
+    linear-gradient(45deg, #ff6b8a 0 3px, transparent 3px),
+    linear-gradient(-30deg, #ffd23f 0 3px, transparent 3px),
+    linear-gradient(60deg, #6bb8ff 0 3px, transparent 3px),
+    linear-gradient(10deg, #7dff6b 0 3px, transparent 3px);
+  background-size: 37px 41px, 53px 47px, 43px 59px, 61px 53px;
+  background-position: 3px 5px, 17px 23px, 29px 11px, 7px 31px;
+  opacity: 0.85;
+  animation: confetti-fall 6s linear infinite;
+}
+
+/* cada capa baja exactamente el alto de su baldosa: el loop no salta */
+@keyframes confetti-fall {
+  from { background-position: 3px 5px, 17px 23px, 29px 11px, 7px 31px; }
+  to { background-position: 3px 46px, 17px 70px, 29px 70px, 7px 84px; }
+}

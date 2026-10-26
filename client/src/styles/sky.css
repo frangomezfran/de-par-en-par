@@ -1,0 +1,275 @@
+/* ==========================================================================
+   Cielo dinámico (detrás de los dos vidrios de la ventana)
+   ========================================================================== */
+
+.sky {
+  --sky-top: #6fb3e8;
+  --sky-bottom: #cfe8f8;
+  --cloud: #ffffff;
+  --cloud-shade: rgba(160, 180, 200, 0.55);
+  --cloud-opacity: 0.95;
+  --roof: rgba(120, 138, 152, 0.55);
+  --roof-2: rgba(150, 166, 178, 0.45);
+  --rain: rgba(225, 235, 245, 0.6);
+  --dur: 1;
+
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, var(--sky-top) 0%, var(--sky-bottom) 100%);
+  isolation: isolate;
+  transition: background 1.2s ease;
+}
+
+.sky > span {
+  position: absolute;
+  pointer-events: none;
+}
+
+/* ---------- Paletas: día ---------- */
+.sky--day.sky--soleado { --sky-top: #5ea8e6; --sky-bottom: #cbe6f7; --cloud-opacity: 0.9; }
+.sky--day.sky--nublado { --sky-top: #93aabd; --sky-bottom: #dbe3e9; --cloud: #f4f6f8; --cloud-shade: rgba(140, 155, 170, 0.6); }
+.sky--day.sky--lluvioso { --sky-top: #75879a; --sky-bottom: #b4bec7; --cloud: #c9d1d8; --cloud-shade: rgba(90, 104, 118, 0.7); --roof: rgba(84, 98, 110, 0.6); --roof-2: rgba(110, 122, 134, 0.5); }
+.sky--day.sky--tormenta { --sky-top: #3f4856; --sky-bottom: #727c8a; --cloud: #8e97a3; --cloud-shade: rgba(40, 46, 56, 0.8); --roof: rgba(40, 48, 58, 0.7); --roof-2: rgba(60, 68, 80, 0.6); }
+.sky--day.sky--nevado { --sky-top: #c3cdd7; --sky-bottom: #eef2f5; --cloud: #f2f4f6; --cloud-shade: rgba(170, 180, 192, 0.6); --roof: rgba(150, 160, 172, 0.5); }
+.sky--day.sky--niebla { --sky-top: #c4c8cb; --sky-bottom: #e5e6e3; --cloud: #eceeee; --cloud-opacity: 0.6; --roof: rgba(150, 156, 160, 0.35); --roof-2: rgba(170, 175, 178, 0.28); }
+
+/* ---------- Paletas: noche ---------- */
+.sky--night { --roof: rgba(14, 18, 32, 0.85); --roof-2: rgba(26, 32, 52, 0.75); --cloud: #3b4560; --cloud-shade: rgba(10, 14, 26, 0.6); --cloud-opacity: 0.7; --rain: rgba(170, 185, 210, 0.45); }
+.sky--night.sky--soleado { --sky-top: #0b1431; --sky-bottom: #2b3c6e; --cloud-opacity: 0.35; }
+.sky--night.sky--nublado { --sky-top: #161d30; --sky-bottom: #39425a; --cloud: #49536c; }
+.sky--night.sky--lluvioso { --sky-top: #121826; --sky-bottom: #2c3445; --cloud: #3a4254; }
+.sky--night.sky--tormenta { --sky-top: #0c0f17; --sky-bottom: #242a38; --cloud: #2f3646; }
+.sky--night.sky--nevado { --sky-top: #27304a; --sky-bottom: #58637d; --cloud: #6d7891; }
+.sky--night.sky--niebla { --sky-top: #282c35; --sky-bottom: #4a4f58; --cloud: #5c616a; --cloud-opacity: 0.5; }
+
+/* ---------- Sol, luna, estrellas ---------- */
+.sky__sun {
+  top: 14%;
+  right: 16%;
+  width: 22%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fffbea 0 34%, rgba(255, 238, 170, 0.75) 35%, rgba(255, 230, 150, 0) 70%);
+  filter: blur(0.3px);
+  animation: sun-breathe 9s ease-in-out infinite;
+}
+
+.sky--nublado .sky__sun {
+  opacity: 0.65;
+  filter: blur(2px);
+}
+
+.sky__moon {
+  top: 13%;
+  right: 20%;
+  width: 11%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 38%, #fffdf2 0, #eae6d6 60%, #cfcab6 100%);
+  box-shadow: 0 0 18px 6px rgba(240, 236, 210, 0.28), 0 0 60px 20px rgba(200, 210, 240, 0.12);
+}
+
+.sky--nublado .sky__moon {
+  opacity: 0.6;
+  filter: blur(1.5px);
+}
+
+.sky__stars {
+  inset: 0 0 30% 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='110'%3E%3Cg fill='%23fff'%3E%3Ccircle cx='12' cy='18' r='0.9'/%3E%3Ccircle cx='48' cy='8' r='0.6'/%3E%3Ccircle cx='80' cy='34' r='1.1'/%3E%3Ccircle cx='118' cy='14' r='0.7'/%3E%3Ccircle cx='30' cy='62' r='0.7'/%3E%3Ccircle cx='96' cy='76' r='0.9'/%3E%3Ccircle cx='132' cy='58' r='0.5'/%3E%3Ccircle cx='60' cy='92' r='0.6'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 140px 110px;
+  animation: twinkle 4.5s ease-in-out infinite alternate;
+}
+
+/* ---------- Nubes ---------- */
+.sky__clouds {
+  inset: 0;
+  opacity: var(--cloud-opacity);
+}
+
+.sky__cloud {
+  position: absolute;
+  width: 46%;
+  aspect-ratio: 2.6;
+  background:
+    radial-gradient(circle at 28% 62%, var(--cloud) 0 21%, transparent 22%),
+    radial-gradient(circle at 50% 42%, var(--cloud) 0 27%, transparent 28%),
+    radial-gradient(circle at 72% 60%, var(--cloud) 0 20%, transparent 21%),
+    radial-gradient(ellipse 46% 24% at 50% 74%, var(--cloud) 0 98%, transparent 100%);
+  filter: blur(1.2px) drop-shadow(0 6px 4px var(--cloud-shade));
+  animation: cloud-drift calc(70s * var(--dur)) linear infinite;
+}
+
+.sky__cloud--a { top: 8%; left: -10%; animation-delay: -12s; }
+.sky__cloud--b { top: 30%; left: 40%; width: 34%; animation-duration: calc(95s * var(--dur)); animation-delay: -50s; opacity: 0.85; }
+.sky__cloud--c { top: -2%; left: 20%; width: 64%; animation-duration: calc(80s * var(--dur)); animation-delay: -30s; }
+.sky__cloud--d { top: 20%; left: -30%; width: 58%; animation-duration: calc(110s * var(--dur)); animation-delay: -70s; }
+
+.sky--soleado .sky__cloud--b { display: none; }
+.sky--lluvioso .sky__cloud,
+.sky--tormenta .sky__cloud { filter: blur(2.5px) drop-shadow(0 8px 6px var(--cloud-shade)); }
+.sky--tormenta { --dur: 0.55; }
+
+/* ---------- Techos de Buenos Aires a lo lejos ---------- */
+.sky__roofs {
+  left: -2%;
+  right: -2%;
+  bottom: 0;
+  height: 30%;
+  background: var(--roof);
+  clip-path: polygon(0 62%, 8% 62%, 8% 44%, 15% 44%, 15% 56%, 22% 56%, 22% 30%, 25% 26%, 28% 30%, 28% 58%, 37% 58%, 37% 40%, 46% 40%, 46% 66%, 55% 66%, 55% 22%, 61% 22%, 61% 52%, 68% 52%, 68% 36%, 71% 30%, 74% 36%, 74% 60%, 83% 60%, 83% 46%, 91% 46%, 91% 64%, 100% 64%, 100% 100%, 0 100%);
+}
+
+.sky__roofs::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--roof-2);
+  clip-path: polygon(0 80%, 12% 80%, 12% 70%, 31% 70%, 31% 84%, 49% 84%, 49% 74%, 64% 74%, 64% 86%, 80% 86%, 80% 76%, 100% 76%, 100% 100%, 0 100%);
+}
+
+.sky--night .sky__roofs::after {
+  /* alguna ventanita prendida a lo lejos */
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(255, 214, 140, 0.9) 0 1px, transparent 1.5px),
+    radial-gradient(circle, rgba(255, 214, 140, 0.75) 0 1px, transparent 1.5px);
+  background-size: 37px 19px, 53px 23px;
+  background-position: 6px 60%, 22px 72%;
+  mask-image: linear-gradient(to bottom, transparent 35%, #000 55%);
+  opacity: 0.8;
+}
+
+/* ---------- Lluvia ---------- */
+.sky__rain {
+  inset: -20% -10% 0 -10%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='90'%3E%3Cg stroke='%23e6eef6' stroke-width='1.1' stroke-linecap='round' opacity='.75'%3E%3Cline x1='8' y1='4' x2='5' y2='18'/%3E%3Cline x1='30' y1='40' x2='27' y2='54'/%3E%3Cline x1='50' y1='12' x2='47' y2='26'/%3E%3Cline x1='19' y1='66' x2='16' y2='80'/%3E%3Cline x1='42' y1='72' x2='39' y2='86'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 90px;
+  animation: rain-fall 0.55s linear infinite;
+}
+
+.sky__rain--far {
+  opacity: 0.45;
+  background-size: 34px 52px;
+  animation-duration: 0.8s;
+}
+
+.sky--night .sky__rain { opacity: 0.6; }
+
+/* ---------- Relámpago ---------- */
+.sky__flash {
+  inset: 0;
+  background: radial-gradient(120% 80% at 30% 10%, rgba(255, 255, 255, 0.95), rgba(220, 230, 255, 0.4) 60%, transparent);
+  opacity: 0;
+  mix-blend-mode: screen;
+  animation: lightning 7.5s linear infinite;
+}
+
+/* ---------- Nieve ---------- */
+.sky__snow {
+  inset: -30% 0 0 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='%23fff'%3E%3Ccircle cx='10' cy='12' r='1.8'/%3E%3Ccircle cx='46' cy='6' r='1.2'/%3E%3Ccircle cx='68' cy='34' r='2'/%3E%3Ccircle cx='26' cy='44' r='1.4'/%3E%3Ccircle cx='56' cy='62' r='1.7'/%3E%3Ccircle cx='14' cy='72' r='1.1'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 80px 80px;
+  animation: snow-fall 9s linear infinite;
+}
+
+.sky__snow--far {
+  opacity: 0.55;
+  background-size: 46px 46px;
+  animation-duration: 14s;
+  filter: blur(0.5px);
+}
+
+/* ---------- Niebla ---------- */
+.sky__fog {
+  left: -50%;
+  width: 200%;
+  top: 30%;
+  height: 40%;
+  background: linear-gradient(to bottom, transparent, rgba(240, 240, 238, 0.75) 40%, rgba(240, 240, 238, 0.75) 60%, transparent);
+  filter: blur(8px);
+  animation: fog-drift 26s ease-in-out infinite alternate;
+}
+
+.sky--night .sky__fog { background: linear-gradient(to bottom, transparent, rgba(120, 126, 136, 0.7) 45%, transparent); }
+
+.sky__fog--b {
+  top: 58%;
+  height: 46%;
+  animation-duration: 34s;
+  animation-direction: alternate-reverse;
+}
+
+/* ---------- Reflejo del vidrio ---------- */
+.sky__glass {
+  inset: 0;
+  z-index: 5;
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.22) 38%, rgba(255, 255, 255, 0) 46%),
+    linear-gradient(115deg, rgba(255, 255, 255, 0) 52%, rgba(255, 255, 255, 0.1) 56%, rgba(255, 255, 255, 0) 60%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.05));
+}
+
+.sky--night .sky__glass { opacity: 0.45; }
+
+/* versión miniatura (botón flotante "Clima del día") */
+.sky--mini .sky__cloud { filter: blur(0.6px); }
+.sky--mini .sky__rain { background-size: 22px 32px; }
+.sky--mini .sky__rain--far { display: none; }
+.sky--mini .sky__snow { background-size: 30px 30px; }
+.sky--mini .sky__stars { background-size: 60px 48px; }
+
+/* ---------- Animaciones ---------- */
+@keyframes cloud-drift {
+  from { transform: translateX(-35%); }
+  to { transform: translateX(160%); }
+}
+
+@keyframes sun-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes twinkle {
+  from { opacity: 0.55; }
+  to { opacity: 1; }
+}
+
+@keyframes rain-fall {
+  from { background-position: 0 0; }
+  to { background-position: -12px 90px; }
+}
+
+.sky__rain--far { animation-name: rain-fall-far; }
+
+@keyframes rain-fall-far {
+  from { background-position: 0 0; }
+  to { background-position: -7px 52px; }
+}
+
+@keyframes snow-fall {
+  from { background-position: 0 0; }
+  to { background-position: 30px 240px; }
+}
+
+.sky__snow--far { animation-name: snow-fall-far; }
+
+@keyframes snow-fall-far {
+  from { background-position: 0 0; }
+  to { background-position: -20px 138px; }
+}
+
+@keyframes fog-drift {
+  from { transform: translateX(-8%); }
+  to { transform: translateX(8%); }
+}
+
+@keyframes lightning {
+  0%, 61%, 63.5%, 66%, 100% { opacity: 0; }
+  62% { opacity: 0.9; }
+  64.5% { opacity: 0.55; }
+  65% { opacity: 0.85; }
+}

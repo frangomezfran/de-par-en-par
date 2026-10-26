@@ -1,0 +1,18 @@
+[
+  {
+    "id": "mariana",
+    "name": "Mariana",
+    "relation": "mamá",
+    "city": "Mar del Plata",
+    "lat": -38.0055,
+    "lon": -57.5426
+  },
+  {
+    "id": "franco",
+    "name": "Franco",
+    "relation": "papá",
+    "city": "Mar del Plata",
+    "lat": -38.0055,
+    "lon": -57.5426
+  }
+]

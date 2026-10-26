@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Pasillo — pared celeste, piso de madera y las dos puertas reales
+   (imagenes/Imagenes-segunda-iteracion/nuevo-index.jpg)
+   ========================================================================== */
+
+.lobby {
+  --ratio: calc(3168 / 1344);
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100svh;
+  overflow: hidden;
+  /* si la pantalla es más alta que la imagen, arriba sigue la pared y abajo el piso */
+  background: linear-gradient(to bottom, #c2e4ec 0 50%, #d6a779 50% 100%);
+}
+
+/* La imagen siempre cubre la pantalla; en celulares se recorta a los costados
+   pero las dos puertas entran siempre */
+.lobby__stage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(max(100vw, 100svh * var(--ratio)), 100vw / 0.46);
+  aspect-ratio: 3168 / 1344;
+}
+
+.lobby__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  user-select: none;
+}
+
+/* pantallas verticales: la imagen se apoya en el piso y arriba sigue la pared */
+@media (max-aspect-ratio: 1 / 1) {
+  .lobby {
+    background: #c2e4ec;
+  }
+
+  .lobby__stage {
+    top: auto;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- Puerta ---------- */
+
+.door {
+  position: absolute;
+  display: block;
+  perspective: 1400px;
+  outline-offset: 6px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.door__hole {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+/* el vano: la habitación iluminada que se ve detrás cuando la puerta cede */
+.door__light {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(90% 60% at 30% 45%, #fff6dd 0, #ffe2a8 45%, #f2bd6c 100%);
+  box-shadow: inset 0 0 18px rgba(120, 70, 20, 0.45);
+  opacity: 0;
+  transition: opacity 0.5s var(--ease-out), filter 0.8s var(--ease-door);
+}
+
+.door__leaf {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  user-select: none;
+  transform-origin: 0 50%; /* bisagras a la izquierda en las dos puertas */
+  transform: rotateY(0deg);
+  transition: transform 0.6s var(--ease-out), filter 0.6s var(--ease-out);
+  will-change: transform;
+}
+
+/* Hover / foco: la puerta cede unos grados y se cuela la luz */
+.door:hover .door__leaf,
+.door:focus-visible .door__leaf {
+  transform: rotateY(-12deg);
+  filter: drop-shadow(-6px 10px 14px rgba(50, 30, 15, 0.35));
+}
+
+.door:hover .door__light,
+.door:focus-visible .door__light {
+  opacity: 1;
+}
+
+.door:active .door__leaf {
+  transform: rotateY(-17deg);
+}
+
+/* Click: se abre del todo */
+.door.is-open .door__leaf {
+  transform: rotateY(-80deg);
+  transition: transform 0.8s var(--ease-door);
+}
+
+.door.is-open .door__light {
+  opacity: 1;
+  filter: brightness(1.25) saturate(0.6);
+}
+
+.lobby.is-leaving .door:not(.is-open) {
+  opacity: 0.7;
+  transition: opacity 0.5s ease;
+}
+
+/* la luz de la habitación inunda la pantalla */
+.lobby__flash {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: #fff8ec;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lobby.is-leaving .lobby__flash {
+  animation: lobby-flash 0.82s var(--ease-door) forwards;
+}
+
+@keyframes lobby-flash {
+  0%, 45% { opacity: 0; }
+  100% { opacity: 1; }
+}

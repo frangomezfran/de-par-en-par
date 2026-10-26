@@ -1,0 +1,17 @@
+services:
+  amelia:
+    build: .
+    container_name: amelia-app
+    ports:
+      - "3001:3001"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - PORT=3001
+      - DATA_DIR=/app/data
+      - CLIENT_DIST=/app/client/dist
+      - USERS=${USERS:-Mariana:mariana,Franco:franco,Amelia:amelia}
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

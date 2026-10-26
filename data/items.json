@@ -1,0 +1,3792 @@
+[
+  {
+    "id": "mariana-peliculas-buscando-a-nemo",
+    "roomId": "mariana",
+    "container": "peliculas",
+    "title": "Buscando a Nemo",
+    "originalTitle": "Finding Nemo",
+    "year": 2003,
+    "cover": "/media/mariana/peliculas/buscando-a-nemo.jpg",
+    "creators": [
+      "Andrew Stanton",
+      "Lee Unkrich"
+    ],
+    "cast": [
+      "Albert Brooks",
+      "Ellen DeGeneres",
+      "Alexander Gould"
+    ],
+    "genres": [
+      "animación",
+      "aventura",
+      "comedia"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "tierno",
+      "divertido"
+    ],
+    "stages": [
+      "primeros-anios",
+      "ninez"
+    ],
+    "specialDates": [
+      "cumple-amelia"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Esta la vimos mil veces en familia. Te va a fascinar Dory y cómo Marlin cruza todo el océano por su hijo, como haría yo por vos.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-10T14:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-peliculas-harry-potter-y-la-piedra-filosofal",
+    "roomId": "mariana",
+    "container": "peliculas",
+    "title": "Harry Potter y la piedra filosofal",
+    "originalTitle": "Harry Potter and the Philosopher's Stone",
+    "year": 2001,
+    "cover": "/media/mariana/peliculas/harry-potter-y-la-piedra-filosofal.jpg",
+    "creators": [
+      "Chris Columbus"
+    ],
+    "cast": [
+      "Daniel Radcliffe",
+      "Rupert Grint",
+      "Emma Watson"
+    ],
+    "genres": [
+      "fantasía",
+      "aventura"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "nublado",
+      "lluvioso"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "moods": [
+      "valiente",
+      "nostalgico"
+    ],
+    "stages": [
+      "ninez",
+      "adolescencia"
+    ],
+    "specialDates": [
+      "navidad",
+      "halloween"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "El inicio de un mundo mágico al que siempre vas a querer volver cuando haga frío y llueva afuera.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-12T16:30:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-peliculas-el-padrino",
+    "roomId": "mariana",
+    "container": "peliculas",
+    "title": "El padrino",
+    "originalTitle": "The Godfather",
+    "year": 1972,
+    "cover": "/media/mariana/peliculas/el-padrino.jpg",
+    "creators": [
+      "Francis Ford Coppola"
+    ],
+    "cast": [
+      "Marlon Brando",
+      "Al Pacino",
+      "James Caan"
+    ],
+    "genres": [
+      "drama",
+      "crimen"
+    ],
+    "audience": "+18",
+    "weather": [
+      "lluvioso",
+      "nublado"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "melancolico",
+      "valiente"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Una obra de arte absoluta del cine. Para cuando seas más grande y te guste sentarte a disfrutar de los grandes clásicos.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-15T20:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-peliculas-high-school-musical",
+    "roomId": "mariana",
+    "container": "peliculas",
+    "title": "High School Musical",
+    "originalTitle": "High School Musical",
+    "year": 2006,
+    "cover": "/media/mariana/peliculas/high-school-musical.jpg",
+    "creators": [
+      "Kenny Ortega"
+    ],
+    "cast": [
+      "Zac Efron",
+      "Vanessa Hudgens",
+      "Ashley Tisdale"
+    ],
+    "genres": [
+      "musical",
+      "comedia",
+      "romance"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "moods": [
+      "alegre",
+      "energico"
+    ],
+    "stages": [
+      "ninez",
+      "adolescencia"
+    ],
+    "specialDates": [
+      "cumple-amelia",
+      "anio-nuevo"
+    ],
+    "tags": [],
+    "rating": 4,
+    "ownerNote": "Bailábamos todas las coreografías frente al espejo en mi adolescencia. ¡Prometo enseñarte los pasos!",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-18T18:15:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-peliculas-toy-story",
+    "roomId": "mariana",
+    "container": "peliculas",
+    "title": "Toy Story",
+    "originalTitle": "Toy Story",
+    "year": 1995,
+    "cover": "/media/mariana/peliculas/toy-story.jpg",
+    "creators": [
+      "John Lasseter"
+    ],
+    "cast": [
+      "Tom Hanks",
+      "Tim Allen",
+      "Don Rickles"
+    ],
+    "genres": [
+      "animación",
+      "aventura",
+      "comedia"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "alegre",
+      "tierno"
+    ],
+    "stages": [
+      "primeros-anios",
+      "ninez"
+    ],
+    "specialDates": [
+      "cumple-amelia"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Me enseñó el valor de la amistad incondicional. Espero que cuides a tus juguetes con el mismo amor con que Andy cuidaba a Woody.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-20T11:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-peliculas-mamma-mia",
+    "roomId": "mariana",
+    "container": "peliculas",
+    "title": "Mamma Mia!",
+    "originalTitle": "Mamma Mia!",
+    "year": 2008,
+    "cover": "/media/mariana/peliculas/mamma-mia.jpg",
+    "creators": [
+      "Phyllida Lloyd"
+    ],
+    "cast": [
+      "Meryl Streep",
+      "Amanda Seyfried",
+      "Pierce Brosnan"
+    ],
+    "genres": [
+      "musical",
+      "comedia",
+      "romance"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "alegre",
+      "energico"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-mariana",
+      "anio-nuevo"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Pura alegría en una isla griega. Cuando suena 'Dancing Queen' no hay tristeza que aguante, nos vamos a poner a cantar a los gritos.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-22T19:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-peliculas-el-diablo-viste-a-la-moda",
+    "roomId": "mariana",
+    "container": "peliculas",
+    "title": "El diablo viste a la moda",
+    "originalTitle": "The Devil Wears Prada",
+    "year": 2006,
+    "cover": "/media/mariana/peliculas/el-diablo-viste-a-la-moda.jpg",
+    "creators": [
+      "David Frankel"
+    ],
+    "cast": [
+      "Meryl Streep",
+      "Anne Hathaway",
+      "Emily Blunt"
+    ],
+    "genres": [
+      "comedia",
+      "drama"
+    ],
+    "audience": "+13",
+    "weather": [
+      "nublado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "divertido",
+      "energico"
+    ],
+    "stages": [
+      "adolescencia",
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-mariana"
+    ],
+    "tags": [],
+    "rating": 4,
+    "ownerNote": "Divertidísima, con outfits increíbles y frases que repetimos todo el tiempo con tus tías.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-25T15:30:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-peliculas-orgullo-y-prejuicio",
+    "roomId": "mariana",
+    "container": "peliculas",
+    "title": "Orgullo y prejuicio",
+    "originalTitle": "Pride & Prejudice",
+    "year": 2005,
+    "cover": "/media/mariana/peliculas/orgullo-y-prejuicio.jpg",
+    "creators": [
+      "Joe Wright"
+    ],
+    "cast": [
+      "Keira Knightley",
+      "Matthew Macfadyen",
+      "Rosamund Pike"
+    ],
+    "genres": [
+      "drama",
+      "romance"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "lluvioso",
+      "niebla"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera",
+      "otono"
+    ],
+    "moods": [
+      "tierno",
+      "nostalgico"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-mariana"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "La escena bajo la lluvia en el templo es insuperable. Una historia preciosa de miradas y palabras justas.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-28T21:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-peliculas-la-la-land",
+    "roomId": "mariana",
+    "container": "peliculas",
+    "title": "La La Land",
+    "originalTitle": "La La Land",
+    "year": 2016,
+    "cover": "/media/mariana/peliculas/la-la-land.jpg",
+    "creators": [
+      "Damien Chazelle"
+    ],
+    "cast": [
+      "Ryan Gosling",
+      "Emma Stone"
+    ],
+    "genres": [
+      "musical",
+      "drama",
+      "romance"
+    ],
+    "audience": "+13",
+    "weather": [
+      "niebla",
+      "nublado"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "melancolico",
+      "nostalgico"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-mariana"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Los colores, la música de piano y esa nostalgia tan dulce de los sueños cumplidos. Te va a encantar su banda sonora.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-01T22:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-peliculas-mi-villano-favorito",
+    "roomId": "mariana",
+    "container": "peliculas",
+    "title": "Mi villano favorito",
+    "originalTitle": "Despicable Me",
+    "year": 2010,
+    "cover": "/media/mariana/peliculas/mi-villano-favorito.jpg",
+    "creators": [
+      "Pierre Coffin",
+      "Chris Renaud"
+    ],
+    "cast": [
+      "Steve Carell",
+      "Jason Segel",
+      "Russell Brand"
+    ],
+    "genres": [
+      "animación",
+      "comedia",
+      "familiar"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "divertido",
+      "tierno"
+    ],
+    "stages": [
+      "primeros-anios",
+      "ninez"
+    ],
+    "specialDates": [
+      "cumple-amelia",
+      "navidad"
+    ],
+    "tags": [],
+    "rating": 4,
+    "ownerNote": "Gru haciéndose querer por las tres nenas me derrite el corazón. Los minions te van a hacer reír a carcajadas.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-04T17:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-series-friends",
+    "roomId": "mariana",
+    "container": "series",
+    "title": "Friends",
+    "originalTitle": "Friends",
+    "year": 1994,
+    "cover": "/media/mariana/series/friends.jpg",
+    "creators": [
+      "David Crane",
+      "Marta Kauffman"
+    ],
+    "cast": [
+      "Jennifer Aniston",
+      "Courteney Cox",
+      "Lisa Kudrow",
+      "Matt LeBlanc",
+      "Matthew Perry",
+      "David Schwimmer"
+    ],
+    "genres": [
+      "comedia",
+      "romance"
+    ],
+    "audience": "+13",
+    "weather": [
+      "nublado"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "moods": [
+      "divertido",
+      "alegre"
+    ],
+    "stages": [
+      "adolescencia",
+      "siempre"
+    ],
+    "specialDates": [
+      "anio-nuevo"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Mi refugio de toda la vida. No importa qué pase en el día, ponés un capítulo de Friends y te sentís en casa.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-06T19:30:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-series-gilmore-girls",
+    "roomId": "mariana",
+    "container": "series",
+    "title": "Gilmore Girls",
+    "originalTitle": "Gilmore Girls",
+    "year": 2000,
+    "cover": "/media/mariana/series/gilmore-girls.jpg",
+    "creators": [
+      "Amy Sherman-Palladino"
+    ],
+    "cast": [
+      "Lauren Graham",
+      "Alexis Bledel",
+      "Scott Patterson"
+    ],
+    "genres": [
+      "drama",
+      "comedia"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "nublado",
+      "lluvioso"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "tierno",
+      "tranquilo"
+    ],
+    "stages": [
+      "adolescencia",
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-mariana"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "El café, el pueblo otoñal y esa relación tan compinche entre madre e hija que sueño tener con vos.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-08T16:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-series-floricienta",
+    "roomId": "mariana",
+    "container": "series",
+    "title": "Floricienta",
+    "originalTitle": "Floricienta",
+    "year": 2004,
+    "cover": "/media/mariana/series/floricienta.jpg",
+    "creators": [
+      "Cris Morena"
+    ],
+    "cast": [
+      "Florencia Bertotti",
+      "Juan Gil Navarro",
+      "Benjamín Rojas"
+    ],
+    "genres": [
+      "comedia",
+      "musical",
+      "familiar"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "alegre",
+      "energico"
+    ],
+    "stages": [
+      "primeros-anios",
+      "ninez"
+    ],
+    "specialDates": [
+      "cumple-amelia"
+    ],
+    "tags": [],
+    "rating": 4,
+    "ownerNote": "Crecí cantando 'Flores amarillas'. Ojalá cantes y bailes descalza por la casa como lo hacía yo.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-10T18:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-series-stranger-things",
+    "roomId": "mariana",
+    "container": "series",
+    "title": "Stranger Things",
+    "originalTitle": "Stranger Things",
+    "year": 2016,
+    "cover": "/media/mariana/series/stranger-things.jpg",
+    "creators": [
+      "The Duffer Brothers"
+    ],
+    "cast": [
+      "Millie Bobby Brown",
+      "Winona Ryder",
+      "David Harbour"
+    ],
+    "genres": [
+      "ciencia ficción",
+      "drama",
+      "misterio"
+    ],
+    "audience": "+16",
+    "weather": [
+      "tormenta",
+      "niebla"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "valiente",
+      "nostalgico"
+    ],
+    "stages": [
+      "adolescencia",
+      "siempre"
+    ],
+    "specialDates": [
+      "halloween"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Esa estética ochentosa y las bicis en otoño tienen una magia especial. Ideal para maratonear con una mantita.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-12T21:40:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-libros-el-principito",
+    "roomId": "mariana",
+    "container": "libros",
+    "title": "El principito",
+    "originalTitle": "Le Petit Prince",
+    "year": 1943,
+    "cover": "/media/mariana/libros/el-principito.jpg",
+    "creators": [
+      "Antoine de Saint-Exupéry"
+    ],
+    "cast": [],
+    "genres": [
+      "fábula",
+      "filosofía",
+      "infantil"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "tierno",
+      "melancolico"
+    ],
+    "stages": [
+      "primeros-anios",
+      "ninez",
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-amelia"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "'Lo esencial es invisible a los ojos'. Este librito te lo voy a leer desde chiquita para que nunca olvides lo que importa.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-14T11:20:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-libros-mujercitas",
+    "roomId": "mariana",
+    "container": "libros",
+    "title": "Mujercitas",
+    "originalTitle": "Little Women",
+    "year": 1868,
+    "cover": "/media/mariana/libros/mujercitas.jpg",
+    "creators": [
+      "Louisa May Alcott"
+    ],
+    "cast": [],
+    "genres": [
+      "novela clásica",
+      "drama",
+      "familiar"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "nevado"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "invierno"
+    ],
+    "moods": [
+      "tierno",
+      "nostalgico"
+    ],
+    "stages": [
+      "ninez",
+      "adolescencia"
+    ],
+    "specialDates": [
+      "navidad"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Jo March me inspiró a escribir y a defender siempre mis convicciones. Es una lectura tibia como un té en invierno.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-16T15:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-libros-rayuela",
+    "roomId": "mariana",
+    "container": "libros",
+    "title": "Rayuela",
+    "originalTitle": "Rayuela",
+    "year": 1963,
+    "cover": "/media/mariana/libros/rayuela.jpg",
+    "creators": [
+      "Julio Cortázar"
+    ],
+    "cast": [],
+    "genres": [
+      "novela",
+      "vanguardia",
+      "ficción"
+    ],
+    "audience": "+16",
+    "weather": [
+      "lluvioso"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "nostalgico",
+      "tranquilo"
+    ],
+    "stages": [
+      "adolescencia",
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-mariana"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "París, Buenos Aires y esa manera lúdica de mirar la literatura. Para cuando quieras enamorarte de las palabras.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-18T20:10:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-libros-harry-potter-1",
+    "roomId": "mariana",
+    "container": "libros",
+    "title": "Harry Potter y la piedra filosofal",
+    "originalTitle": "Harry Potter and the Philosopher's Stone",
+    "year": 1997,
+    "cover": "/media/mariana/libros/harry-potter-1.jpg",
+    "creators": [
+      "J. K. Rowling"
+    ],
+    "cast": [],
+    "genres": [
+      "fantasía",
+      "juvenil",
+      "aventura"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "tormenta",
+      "nublado"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "moods": [
+      "valiente",
+      "divertido"
+    ],
+    "stages": [
+      "ninez",
+      "adolescencia"
+    ],
+    "specialDates": [
+      "cumple-amelia",
+      "navidad"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Hizo que toda una generación amara leer de noche con la linterna encendida. Una puerta que se abre y no se cierra más.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-20T22:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-musica-abbey-road",
+    "roomId": "mariana",
+    "container": "musica",
+    "title": "Abbey Road",
+    "originalTitle": "Abbey Road",
+    "year": 1969,
+    "cover": "/media/mariana/musica/abbey-road.jpg",
+    "creators": [
+      "The Beatles"
+    ],
+    "cast": [],
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "alegre",
+      "nostalgico"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-mariana"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "'Here Comes The Sun' es la canción con la que quiero que despiertes en las mañanas de primavera.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-22T10:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-musica-fearless",
+    "roomId": "mariana",
+    "container": "musica",
+    "title": "Fearless",
+    "originalTitle": "Fearless",
+    "year": 2008,
+    "cover": "/media/mariana/musica/fearless.jpg",
+    "creators": [
+      "Taylor Swift"
+    ],
+    "cast": [],
+    "genres": [
+      "pop",
+      "country pop"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "lluvioso"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "moods": [
+      "tierno",
+      "energico"
+    ],
+    "stages": [
+      "adolescencia"
+    ],
+    "specialDates": [
+      "cumple-mariana"
+    ],
+    "tags": [],
+    "rating": 4,
+    "ownerNote": "Gritar 'Love Story' con la lluvia de fondo es un ritual infalible de mi juventud que te quiero heredar.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-24T17:15:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-musica-cancion-animal",
+    "roomId": "mariana",
+    "container": "musica",
+    "title": "Canción Animal",
+    "originalTitle": "Canción Animal",
+    "year": 1990,
+    "cover": "/media/mariana/musica/cancion-animal.jpg",
+    "creators": [
+      "Soda Stereo",
+      "Gustavo Cerati"
+    ],
+    "cast": [],
+    "genres": [
+      "rock en español",
+      "rock alternativo"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "energico",
+      "valiente"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Rock argentino en su máxima expresión. 'De Música Ligera' te la vamos a cantar con papá en el auto a los gritos.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-26T21:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-musica-rumours",
+    "roomId": "mariana",
+    "container": "musica",
+    "title": "Rumours",
+    "originalTitle": "Rumours",
+    "year": 1977,
+    "cover": "/media/mariana/musica/rumours.jpg",
+    "creators": [
+      "Fleetwood Mac"
+    ],
+    "cast": [],
+    "genres": [
+      "soft rock",
+      "pop rock"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "verano",
+      "otono"
+    ],
+    "moods": [
+      "melancolico",
+      "alegre"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-mariana"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Melodías perfectas que flotan en el aire. 'Dreams' tiene ese ritmo suave que te relaja apenas empieza.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-28T14:45:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-juegos-los-sims-2",
+    "roomId": "mariana",
+    "container": "juegos",
+    "title": "The Sims 2",
+    "originalTitle": "The Sims 2",
+    "year": 2004,
+    "cover": "/media/mariana/juegos/los-sims-2.jpg",
+    "creators": [
+      "Maxis",
+      "Will Wright"
+    ],
+    "cast": [],
+    "genres": [
+      "simulación",
+      "estrategia"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "lluvioso"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "invierno"
+    ],
+    "moods": [
+      "divertido",
+      "tranquilo"
+    ],
+    "stages": [
+      "ninez",
+      "adolescencia"
+    ],
+    "specialDates": [
+      "navidad"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Podía pasar tardes enteras diseñando casas y familias soñadas mientras afuera llovía sin parar.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-02T16:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-juegos-mario-kart-wii",
+    "roomId": "mariana",
+    "container": "juegos",
+    "title": "Mario Kart Wii",
+    "originalTitle": "Mario Kart Wii",
+    "year": 2008,
+    "cover": "/media/mariana/juegos/mario-kart-wii.jpg",
+    "creators": [
+      "Nintendo"
+    ],
+    "cast": [],
+    "genres": [
+      "carreras",
+      "fiesta"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "alegre",
+      "energico"
+    ],
+    "stages": [
+      "ninez",
+      "adolescencia"
+    ],
+    "specialDates": [
+      "cumple-amelia",
+      "anio-nuevo"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "¡Preparate para las carreras! Siempre elijo a Peach y tiro caparazones azules sin piedad a quien vaya primero.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-04T18:20:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-flores-jazmin",
+    "roomId": "mariana",
+    "container": "flores",
+    "title": "Jazmín",
+    "originalTitle": "Jasminum officinale",
+    "year": null,
+    "cover": "/media/mariana/flores/jazmin.jpg",
+    "creators": [
+      "Naturaleza"
+    ],
+    "cast": [],
+    "genres": [
+      "floral",
+      "aroma"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "moods": [
+      "tierno",
+      "tranquilo"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-mariana"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "El olor a jazmín en diciembre es sinónimo de que llega el calor y las noches estrelladas en el patio.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-06T10:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-flores-lavanda",
+    "roomId": "mariana",
+    "container": "flores",
+    "title": "Lavanda",
+    "originalTitle": "Lavandula angustifolia",
+    "year": null,
+    "cover": "/media/mariana/flores/lavanda.jpg",
+    "creators": [
+      "Naturaleza"
+    ],
+    "cast": [],
+    "genres": [
+      "aromática",
+      "relajante"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "tranquilo",
+      "tierno"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-mariana"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Un ramito de lavanda en la almohada para que duermas tranquila y sueñes cosas hermosas.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-08T11:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-flores-girasol",
+    "roomId": "mariana",
+    "container": "flores",
+    "title": "Girasol",
+    "originalTitle": "Helianthus annuus",
+    "year": null,
+    "cover": "/media/mariana/flores/girasol.jpg",
+    "creators": [
+      "Naturaleza"
+    ],
+    "cast": [],
+    "genres": [
+      "silvestre",
+      "luminosa"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "alegre",
+      "energico"
+    ],
+    "stages": [
+      "primeros-anios",
+      "ninez"
+    ],
+    "specialDates": [
+      "cumple-amelia"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Buscar siempre la luz, como ellos. Quiero que crezcas con esa misma fuerza y luminosidad.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-10T12:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-fotos-mar-del-plata",
+    "roomId": "mariana",
+    "container": "fotos",
+    "title": "Mar del Plata",
+    "originalTitle": "Mar del Plata",
+    "year": 2024,
+    "cover": "/media/mariana/fotos/mar-del-plata.jpg",
+    "creators": [
+      "Mariana"
+    ],
+    "cast": [],
+    "genres": [
+      "recuerdo",
+      "viaje"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "alegre",
+      "nostalgico"
+    ],
+    "stages": [
+      "bebe",
+      "primeros-anios"
+    ],
+    "specialDates": [
+      "cumple-mariana"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "El mar siempre me renueva. Ya te imagino corriendo por la arena y mojándote los piecitos en la orilla.",
+    "body": "Tarde de verano frente a la Bristol con papá, comiendo churros recién hechos y soñando despiertos con tus primeros pasos en la orilla del mar.",
+    "date": "2024-01-20",
+    "place": "Mar del Plata, Buenos Aires",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-12T15:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-fotos-cataratas-del-iguazu",
+    "roomId": "mariana",
+    "container": "fotos",
+    "title": "Cataratas del Iguazú",
+    "originalTitle": "Iguazu Falls",
+    "year": 2023,
+    "cover": "/media/mariana/fotos/cataratas-del-iguazu.jpg",
+    "creators": [
+      "Mariana"
+    ],
+    "cast": [],
+    "genres": [
+      "naturaleza",
+      "viaje"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado",
+      "tormenta"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "valiente",
+      "energico"
+    ],
+    "stages": [
+      "primeros-anios",
+      "ninez"
+    ],
+    "specialDates": [],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "La fuerza del agua en la Garganta del Diablo te deja sin palabras. Algún día te vamos a llevar a conocerlas.",
+    "body": "El vapor del agua nos empapó la cara y los coatíes merodeaban entre las pasarelas. Una maravilla imponente en medio de la selva misionera.",
+    "date": "2023-10-14",
+    "place": "Parque Nacional Iguazú, Misiones",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-14T17:30:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-actividades-natacion",
+    "roomId": "mariana",
+    "container": "actividades",
+    "title": "Natación",
+    "originalTitle": "Swimming",
+    "year": null,
+    "cover": "/media/mariana/actividades/natacion.jpg",
+    "creators": [
+      "Deporte"
+    ],
+    "cast": [],
+    "genres": [
+      "deporte",
+      "agua"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "energico",
+      "alegre"
+    ],
+    "stages": [
+      "bebe",
+      "primeros-anios",
+      "ninez"
+    ],
+    "specialDates": [],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Sentir el agua y nadar libre es de las sensaciones más lindas del mundo. Vamos a empezar matronatación juntas.",
+    "body": "Nadar de espaldas mirando el techo o el cielo despejado, sintiendo que flotás sin peso. Una actividad que te llena de vitalidad y calma a la vez.",
+    "date": "2026-02-01",
+    "place": "Club Náutico",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-16T09:30:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-moodboard-medialunas",
+    "roomId": "mariana",
+    "container": "moodboard",
+    "title": "Medialunas de manteca calientes",
+    "originalTitle": "Croissant",
+    "year": null,
+    "cover": "/media/mariana/moodboard/medialunas.jpg",
+    "creators": [
+      "Panadería artesanal"
+    ],
+    "cast": [],
+    "genres": [
+      "gastronomía"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera",
+      "invierno"
+    ],
+    "moods": [
+      "tierno",
+      "alegre"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [],
+    "tags": [
+      "comida"
+    ],
+    "rating": 5,
+    "ownerNote": "Medialunas de manteca recién salidas del horno los domingos a la mañana. Nada supera ese perfume en la cocina.",
+    "body": "Ese brillo de almíbar tibio en la corteza y la masa hojaldrada que se deshace en los dedos. El desayuno por excelencia para compartir con café con leche.",
+    "date": null,
+    "place": "La panadería de la esquina",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-18T10:15:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-moodboard-vestiditos-de-verano",
+    "roomId": "mariana",
+    "container": "moodboard",
+    "title": "Vestiditos frescos con flores",
+    "originalTitle": "Vestiditos frescos con flores",
+    "year": 2026,
+    "cover": null,
+    "creators": [
+      "Mariana"
+    ],
+    "cast": [],
+    "genres": [
+      "diseño",
+      "recuerdo"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "tierno",
+      "alegre"
+    ],
+    "stages": [
+      "primeros-anios"
+    ],
+    "specialDates": [
+      "cumple-mariana"
+    ],
+    "tags": [
+      "moda"
+    ],
+    "rating": 5,
+    "ownerNote": "Elegí telas de lino suave con motas amarillas y margaritas para cuando des tus primeros pasos.",
+    "body": "Tengo guardada una pequeña colección de telas de lino y algodón puro floreado para diseñarte vestiditos frescos cuando llegue el calor de enero. Me imagino viéndote dar tus primeros pasos descalza en el pasto verde, con un sombrerito de paja y la risa suelta al viento.",
+    "date": "2026-01-05",
+    "place": "Taller en casa",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-20T11:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-moodboard-receta-de-chocotorta",
+    "roomId": "mariana",
+    "container": "moodboard",
+    "title": "El secreto de la chocotorta de mamá",
+    "originalTitle": "El secreto de la chocotorta de mamá",
+    "year": 2026,
+    "cover": null,
+    "creators": [
+      "Mariana"
+    ],
+    "cast": [],
+    "genres": [
+      "receta",
+      "tradición"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado",
+      "lluvioso"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "divertido",
+      "tierno"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-amelia",
+      "navidad"
+    ],
+    "tags": [
+      "comida"
+    ],
+    "rating": 5,
+    "ownerNote": "La torta oficial de cada uno de tus cumpleaños. Nunca dejes que nadie le ponga crema chantilly: ¡es queso crema!",
+    "body": "La receta familiar de la chocotorta tiene un solo secreto sagrado que pasa de generación en generación: café bien suave o chocolatada tibia para humedecer las galletitas Chocolinas sin que se desarmen, y partes exactamente iguales de dulce de leche repostero colonial y queso crema firme. La preparamos siempre el día anterior a tu cumple para que descanse toda la noche en la heladera.",
+    "date": "2026-02-15",
+    "place": "Nuestra cocina",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-22T14:30:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-moodboard-mirar-el-cielo-de-tarde",
+    "roomId": "mariana",
+    "container": "moodboard",
+    "title": "El color del cielo a las siete de la tarde",
+    "originalTitle": "El color del cielo a las siete de la tarde",
+    "year": 2026,
+    "cover": null,
+    "creators": [
+      "Mariana"
+    ],
+    "cast": [],
+    "genres": [
+      "poesía",
+      "naturaleza"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "niebla",
+      "nublado"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "tranquilo",
+      "nostalgico"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "anio-nuevo"
+    ],
+    "tags": [
+      "observaciones"
+    ],
+    "rating": 5,
+    "ownerNote": "Ese gradiente entre naranja y violeta sobre los techos es mi momento favorito del día.",
+    "body": "Hay diez minutos exactos entre que baja el sol y anochece donde el cielo de Buenos Aires se tiñe de un violeta rosado único. Cuando estés triste, abrumada o cansada, asomate al balcón o a la ventana y mirá hacia el oeste; ese color te calma el alma enseguida y te recuerda que cada día termina regalando belleza.",
+    "date": "2026-03-01",
+    "place": "Balcón de casa",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-24T19:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-moodboard-libros-vs-peliculas",
+    "roomId": "mariana",
+    "container": "moodboard",
+    "title": "Leer el libro antes de ver la peli",
+    "originalTitle": "Leer el libro antes de ver la peli",
+    "year": 2026,
+    "cover": null,
+    "creators": [
+      "Mariana"
+    ],
+    "cast": [],
+    "genres": [
+      "debate",
+      "literatura"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "lluvioso"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "invierno"
+    ],
+    "moods": [
+      "divertido",
+      "tranquilo"
+    ],
+    "stages": [
+      "adolescencia"
+    ],
+    "specialDates": [],
+    "tags": [
+      "comparativas"
+    ],
+    "rating": 5,
+    "ownerNote": "Papá insiste con el impacto de la pantalla grande, pero la imaginación no tiene límites de presupuesto.",
+    "body": "La eterna discusión en la sobremesa con papá: él sostiene que la película sintetiza la emoción visual con la música, pero yo defiendo a capa y espada que en las páginas de una buena novela los personajes tienen la voz y el rostro que vos misma elegís darles. Leé siempre primero la historia en papel; después compartimos los pochoclos frente a la pantalla.",
+    "date": "2026-03-10",
+    "place": "Biblioteca",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-26T17:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-diario-el-dia-que-supimos",
+    "roomId": "mariana",
+    "container": "diario",
+    "title": "El día que supimos que venías",
+    "originalTitle": "El día que supimos que venías",
+    "year": 2025,
+    "cover": null,
+    "creators": [
+      "Mariana"
+    ],
+    "cast": [],
+    "genres": [
+      "recuerdo familiar"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "tierno",
+      "alegre"
+    ],
+    "stages": [
+      "embarazo"
+    ],
+    "specialDates": [
+      "cumple-mariana"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "El mejor cumpleaños de mi vida. Saber que estabas en camino iluminó todo nuestro mundo.",
+    "body": "Era una mañana fría de domingo pero el departamento estaba iluminado por un sol increíble que entraba directo por el ventanal. Cuando vimos las dos rayitas en el test nos miramos en silencio por unos segundos, como si el tiempo se hubiera detenido por completo para nosotros dos. Papá se puso a llorar de la emoción, me abrazó tan fuerte que sentí que el corazón se me salía del pecho, y pusimos música bajito para empezar a soñarte despiertos. Desde ese instante exacto supimos que todo lo que habíamos vivido hasta entonces cobraba un sentido nuevo, hermoso y luminoso. Eras nuestro milagro en camino, Amelia.",
+    "date": "2025-06-15",
+    "place": "Buenos Aires",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-28T09:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-diario-primera-ecografia",
+    "roomId": "mariana",
+    "container": "diario",
+    "title": "Tu primer latido",
+    "originalTitle": "Tu primer latido",
+    "year": 2025,
+    "cover": null,
+    "creators": [
+      "Mariana"
+    ],
+    "cast": [],
+    "genres": [
+      "recuerdo familiar"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "nublado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "invierno"
+    ],
+    "moods": [
+      "tierno",
+      "tranquilo"
+    ],
+    "stages": [
+      "embarazo"
+    ],
+    "specialDates": [],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Ese galopito veloz en el monitor fue la sinfonía más emocionante que escuché jamás.",
+    "body": "Entramos a la sala tomados de la mano, con un nudo en la garganta y los nervios a flor de piel. La médica nos sonrió con mucha paciencia, apoyó el ecógrafo con gel frío sobre mi panza y de repente la habitación se inundó de un galope rápido, constante y poderoso. Era tu corazón latiendo con una fuerza que nos dejó sin palabras. Parecía el sonido de un caballito corriendo libre en el campo. Franco no soltaba mi mano y nos caían las lágrimas de felicidad pura. En esa pantallita en blanco y negro, tan chiquitita como una almendra, ya estabas llenándolo todo.",
+    "date": "2025-08-10",
+    "place": "Clínica Suizo Argentina",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-30T11:30:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "mariana-diario-preparando-tu-cuarto",
+    "roomId": "mariana",
+    "container": "diario",
+    "title": "Pintando tu habitación",
+    "originalTitle": "Pintando tu habitación",
+    "year": 2025,
+    "cover": null,
+    "creators": [
+      "Mariana"
+    ],
+    "cast": [],
+    "genres": [
+      "recuerdo familiar"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "alegre",
+      "energico"
+    ],
+    "stages": [
+      "embarazo"
+    ],
+    "specialDates": [
+      "navidad"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Tardamos todo el fin de semana pero quedó un rinconcito de paz perfecto para vos.",
+    "body": "Hoy pasamos todo el sábado con rodillos y pintura en mano. Elegimos un tono cálido, suave, como la luz de la mañana entrando por la persiana. Pusimos una estantería de madera clara para tus primeros cuentos y una sillita mecedora donde nos vamos a acurrucar por las noches. Papá se manchó la remera entera intentando pintar los bordes del techo y nos reímos hasta que nos dolió la panza. Cada detalle, cada mueble y cada rinconcito lo pensamos con tanto amor que la casa ya respira tu presencia mucho antes de tu llegada.",
+    "date": "2025-11-20",
+    "place": "Nuestra casa",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-04-02T16:00:00.000Z",
+    "addedBy": "Mariana",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-peliculas-volver-al-futuro",
+    "roomId": "franco",
+    "container": "peliculas",
+    "title": "Volver al futuro",
+    "originalTitle": "Back to the Future",
+    "year": 1985,
+    "cover": "/media/franco/peliculas/volver-al-futuro.jpg",
+    "creators": [
+      "Robert Zemeckis"
+    ],
+    "cast": [
+      "Michael J. Fox",
+      "Christopher Lloyd",
+      "Lea Thompson"
+    ],
+    "genres": [
+      "ciencia ficción",
+      "aventura",
+      "comedia"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "tormenta"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "alegre",
+      "valiente"
+    ],
+    "stages": [
+      "ninez",
+      "adolescencia"
+    ],
+    "specialDates": [
+      "cumple-franco",
+      "anio-nuevo"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "El DeLorean, el rayo en la torre del reloj y la guitarra sonando a fondo. Mi película favorita de la infancia; te vas a divertir de principio a fin.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-11T12:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-peliculas-el-rey-leon",
+    "roomId": "franco",
+    "container": "peliculas",
+    "title": "El rey león",
+    "originalTitle": "The Lion King",
+    "year": 1994,
+    "cover": "/media/franco/peliculas/el-rey-leon.jpg",
+    "creators": [
+      "Roger Allers",
+      "Rob Minkoff"
+    ],
+    "cast": [
+      "Matthew Broderick",
+      "James Earl Jones",
+      "Jeremy Irons"
+    ],
+    "genres": [
+      "animación",
+      "aventura",
+      "drama"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "tierno",
+      "valiente"
+    ],
+    "stages": [
+      "primeros-anios",
+      "ninez"
+    ],
+    "specialDates": [
+      "cumple-amelia"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "El ciclo sin fin y la escena bajo las estrellas con Mufasa. Me enseñó a honrar mis raíces y a saber que siempre voy a estar cuidándote.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-13T15:30:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-peliculas-toy-story",
+    "roomId": "franco",
+    "container": "peliculas",
+    "title": "Toy Story",
+    "originalTitle": "Toy Story",
+    "year": 1995,
+    "cover": "/media/franco/peliculas/toy-story.jpg",
+    "creators": [
+      "John Lasseter"
+    ],
+    "cast": [
+      "Tom Hanks",
+      "Tim Allen",
+      "Don Rickles"
+    ],
+    "genres": [
+      "animación",
+      "comedia",
+      "aventura"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "divertido",
+      "tierno"
+    ],
+    "stages": [
+      "primeros-anios",
+      "ninez"
+    ],
+    "specialDates": [
+      "cumple-amelia"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Un clásico eterno sobre crecer y no perder la imaginación. Coincidimos con mamá en que es de las mejores películas que existen.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-16T17:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-peliculas-jurassic-park",
+    "roomId": "franco",
+    "container": "peliculas",
+    "title": "Jurassic Park",
+    "originalTitle": "Jurassic Park",
+    "year": 1993,
+    "cover": "/media/franco/peliculas/jurassic-park.jpg",
+    "creators": [
+      "Steven Spielberg"
+    ],
+    "cast": [
+      "Sam Neill",
+      "Laura Dern",
+      "Jeff Goldblum"
+    ],
+    "genres": [
+      "ciencia ficción",
+      "aventura"
+    ],
+    "audience": "+13",
+    "weather": [
+      "tormenta",
+      "lluvioso"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "valiente",
+      "energico"
+    ],
+    "stages": [
+      "ninez",
+      "adolescencia"
+    ],
+    "specialDates": [
+      "halloween"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "La primera vez que vi al T-Rex en el cine casi me caigo de la butaca. Una aventura increíble para ver comiendo pochoclos un día de tormenta.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-19T21:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-peliculas-la-comunidad-del-anillo",
+    "roomId": "franco",
+    "container": "peliculas",
+    "title": "El señor de los anillos: La comunidad del anillo",
+    "originalTitle": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "cover": "/media/franco/peliculas/la-comunidad-del-anillo.jpg",
+    "creators": [
+      "Peter Jackson"
+    ],
+    "cast": [
+      "Elijah Wood",
+      "Ian McKellen",
+      "Viggo Mortensen"
+    ],
+    "genres": [
+      "fantasía",
+      "aventura"
+    ],
+    "audience": "+13",
+    "weather": [
+      "niebla",
+      "nublado"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "otono",
+      "invierno"
+    ],
+    "moods": [
+      "valiente",
+      "nostalgico"
+    ],
+    "stages": [
+      "ninez",
+      "adolescencia"
+    ],
+    "specialDates": [
+      "navidad"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Un viaje épico sobre el coraje de los más pequeños. Frodo y Sam te van a enseñar que hasta la persona más humilde puede cambiar el destino.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-21T18:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-peliculas-nueve-reinas",
+    "roomId": "franco",
+    "container": "peliculas",
+    "title": "Nueve reinas",
+    "originalTitle": "Nine Queens",
+    "year": 2000,
+    "cover": "/media/franco/peliculas/nueve-reinas.jpg",
+    "creators": [
+      "Fabián Bielinsky"
+    ],
+    "cast": [
+      "Ricardo Darín",
+      "Gastón Pauls",
+      "Leticia Brédice"
+    ],
+    "genres": [
+      "drama",
+      "suspenso",
+      "crimen"
+    ],
+    "audience": "+13",
+    "weather": [
+      "nublado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "divertido",
+      "energico"
+    ],
+    "stages": [
+      "adolescencia",
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-franco"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Cine argentino del bueno. Un guion de relojería por las calles de Buenos Aires con un Darín inolvidable.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-24T20:30:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-peliculas-el-secreto-de-sus-ojos",
+    "roomId": "franco",
+    "container": "peliculas",
+    "title": "El secreto de sus ojos",
+    "originalTitle": "The Secret in Their Eyes",
+    "year": 2009,
+    "cover": "/media/franco/peliculas/el-secreto-de-sus-ojos.jpg",
+    "creators": [
+      "Juan José Campanella"
+    ],
+    "cast": [
+      "Ricardo Darín",
+      "Soledad Villamil",
+      "Guillermo Francella"
+    ],
+    "genres": [
+      "drama",
+      "misterio",
+      "romance"
+    ],
+    "audience": "+16",
+    "weather": [
+      "lluvioso"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "nostalgico",
+      "melancolico"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "halloween"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "La escena del estadio de Huracán y la charla sobre la pasión son inolvidables. Ganó el Óscar y representa el talento de nuestro cine.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-27T22:15:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-peliculas-ratatouille",
+    "roomId": "franco",
+    "container": "peliculas",
+    "title": "Ratatouille",
+    "originalTitle": "Ratatouille",
+    "year": 2007,
+    "cover": "/media/franco/peliculas/ratatouille.jpg",
+    "creators": [
+      "Brad Bird"
+    ],
+    "cast": [
+      "Patton Oswalt",
+      "Ian Holm",
+      "Lou Romano"
+    ],
+    "genres": [
+      "animación",
+      "comedia",
+      "familiar"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "lluvioso"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "tierno",
+      "alegre"
+    ],
+    "stages": [
+      "primeros-anios",
+      "ninez"
+    ],
+    "specialDates": [
+      "cumple-amelia"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "'Cualquiera puede cocinar'. El discurso de Anton Ego al probar el plato me emociona cada vez que lo escucho.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-01-30T19:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-peliculas-up",
+    "roomId": "franco",
+    "container": "peliculas",
+    "title": "Up: Una aventura de altura",
+    "originalTitle": "Up",
+    "year": 2009,
+    "cover": "/media/franco/peliculas/up.jpg",
+    "creators": [
+      "Pete Docter",
+      "Bob Peterson"
+    ],
+    "cast": [
+      "Ed Asner",
+      "Jordan Nagai",
+      "Christopher Plummer"
+    ],
+    "genres": [
+      "animación",
+      "aventura",
+      "drama"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "tierno",
+      "melancolico"
+    ],
+    "stages": [
+      "primeros-anios",
+      "ninez",
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-amelia"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Los primeros diez minutos son una lección de vida y amor puro. Y después, globos de colores y ganas de viajar bien alto.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-02T16:45:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-peliculas-interestelar",
+    "roomId": "franco",
+    "container": "peliculas",
+    "title": "Interestelar",
+    "originalTitle": "Interstellar",
+    "year": 2014,
+    "cover": "/media/franco/peliculas/interestelar.jpg",
+    "creators": [
+      "Christopher Nolan"
+    ],
+    "cast": [
+      "Matthew McConaughey",
+      "Anne Hathaway",
+      "Jessica Chastain"
+    ],
+    "genres": [
+      "ciencia ficción",
+      "drama"
+    ],
+    "audience": "+13",
+    "weather": [
+      "tormenta",
+      "niebla"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "invierno"
+    ],
+    "moods": [
+      "nostalgico",
+      "valiente"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-franco",
+      "anio-nuevo"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "La frase 'el amor es lo único que trasciende el tiempo y el espacio' resume todo lo que siento cuando pienso en vos, hija.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-05T22:30:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-series-los-simpson",
+    "roomId": "franco",
+    "container": "series",
+    "title": "Los Simpson",
+    "originalTitle": "The Simpsons",
+    "year": 1989,
+    "cover": "/media/franco/series/los-simpson.jpg",
+    "creators": [
+      "Matt Groening"
+    ],
+    "cast": [
+      "Dan Castellaneta",
+      "Julie Kavner",
+      "Nancy Cartwright"
+    ],
+    "genres": [
+      "animación",
+      "comedia"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "divertido",
+      "alegre"
+    ],
+    "stages": [
+      "ninez",
+      "adolescencia",
+      "siempre"
+    ],
+    "specialDates": [
+      "navidad",
+      "halloween"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Hablamos en frases de Los Simpson las 24 horas del día. Es parte de nuestro ADN cotidiano y te las vas a saber todas.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-07T13:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-series-breaking-bad",
+    "roomId": "franco",
+    "container": "series",
+    "title": "Breaking Bad",
+    "originalTitle": "Breaking Bad",
+    "year": 2008,
+    "cover": "/media/franco/series/breaking-bad.jpg",
+    "creators": [
+      "Vince Gilligan"
+    ],
+    "cast": [
+      "Bryan Cranston",
+      "Aaron Paul",
+      "Anna Gunn"
+    ],
+    "genres": [
+      "drama",
+      "crimen",
+      "suspenso"
+    ],
+    "audience": "+18",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "valiente",
+      "energico"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "halloween"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "La mejor serie dramática de la historia de la televisión. Tensión pura capítulo a capítulo, para cuando seas grande.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-09T23:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-series-the-office",
+    "roomId": "franco",
+    "container": "series",
+    "title": "The Office",
+    "originalTitle": "The Office",
+    "year": 2005,
+    "cover": "/media/franco/series/the-office.jpg",
+    "creators": [
+      "Greg Daniels",
+      "Ricky Gervais",
+      "Stephen Merchant"
+    ],
+    "cast": [
+      "Steve Carell",
+      "Rainn Wilson",
+      "John Krasinski",
+      "Jenna Fischer"
+    ],
+    "genres": [
+      "comedia"
+    ],
+    "audience": "+13",
+    "weather": [
+      "nublado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "divertido",
+      "alegre"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Michael Scott y las miradas de Jim a cámara. No hay almuerzo en el que no pongamos un episodio para reírnos un rato.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-11T14:15:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-series-casados-con-hijos",
+    "roomId": "franco",
+    "container": "series",
+    "title": "Casados con hijos",
+    "originalTitle": "Casados con hijos",
+    "year": 2005,
+    "cover": "/media/franco/series/casados-con-hijos.jpg",
+    "creators": [
+      "Claudio Ferrari"
+    ],
+    "cast": [
+      "Guillermo Francella",
+      "Florencia Peña",
+      "Luisana Lopilato",
+      "Darío Lopilato"
+    ],
+    "genres": [
+      "comedia",
+      "sitcom"
+    ],
+    "audience": "+13",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "verano",
+      "invierno"
+    ],
+    "moods": [
+      "divertido",
+      "alegre"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "anio-nuevo"
+    ],
+    "tags": [],
+    "rating": 4,
+    "ownerNote": "Pepe Argento es un ícono del humor popular nuestro. Ideal para mirar comiendo una pizza un viernes a la noche.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-13T20:45:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-libros-cien-anos-de-soledad",
+    "roomId": "franco",
+    "container": "libros",
+    "title": "Cien años de soledad",
+    "originalTitle": "Cien años de soledad",
+    "year": 1967,
+    "cover": "/media/franco/libros/cien-anos-de-soledad.jpg",
+    "creators": [
+      "Gabriel García Márquez"
+    ],
+    "cast": [],
+    "genres": [
+      "realismo mágico",
+      "novela clásica"
+    ],
+    "audience": "+16",
+    "weather": [
+      "soleado",
+      "lluvioso"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "nostalgico",
+      "melancolico"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Macondo, las mariposas amarillas y la lluvia que duró cuatro años. Un libro que te abre los ojos a la magia de América Latina.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-15T18:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-libros-ficciones",
+    "roomId": "franco",
+    "container": "libros",
+    "title": "Ficciones",
+    "originalTitle": "Ficciones",
+    "year": 1944,
+    "cover": "/media/franco/libros/ficciones.jpg",
+    "creators": [
+      "Jorge Luis Borges"
+    ],
+    "cast": [],
+    "genres": [
+      "cuentos",
+      "fantasía",
+      "filosofía"
+    ],
+    "audience": "+13",
+    "weather": [
+      "niebla"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "tranquilo",
+      "nostalgico"
+    ],
+    "stages": [
+      "adolescencia",
+      "siempre"
+    ],
+    "specialDates": [
+      "halloween"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Laberintos, espejos y bibliotecas infinitas. Borges es nuestro orgullo nacional y una mente sin fronteras.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-17T21:30:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-libros-mafalda",
+    "roomId": "franco",
+    "container": "libros",
+    "title": "Mafalda",
+    "originalTitle": "Mafalda",
+    "year": 1964,
+    "cover": "/media/franco/libros/mafalda.jpg",
+    "creators": [
+      "Quino"
+    ],
+    "cast": [],
+    "genres": [
+      "historieta",
+      "humor gráfico"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "divertido",
+      "alegre"
+    ],
+    "stages": [
+      "ninez",
+      "adolescencia",
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-franco"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Quino dibujó las mejores verdades del mundo a través de los ojos de una nena curiosa e inquieta, como quiero que seas vos.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-19T10:30:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-libros-el-eternauta",
+    "roomId": "franco",
+    "container": "libros",
+    "title": "El Eternauta",
+    "originalTitle": "El Eternauta",
+    "year": 1957,
+    "cover": "/media/franco/libros/el-eternauta.jpg",
+    "creators": [
+      "Héctor Germán Oesterheld",
+      "Francisco Solano López"
+    ],
+    "cast": [],
+    "genres": [
+      "historieta",
+      "ciencia ficción",
+      "aventura"
+    ],
+    "audience": "+13",
+    "weather": [
+      "nevado"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "invierno"
+    ],
+    "moods": [
+      "valiente",
+      "nostalgico"
+    ],
+    "stages": [
+      "adolescencia",
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-franco",
+      "halloween"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "La nevada mortal sobre Buenos Aires y la idea del héroe colectivo: nadie se salva solo, nos salvamos entre todos.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-21T23:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-musica-el-amor-despues-del-amor",
+    "roomId": "franco",
+    "container": "musica",
+    "title": "El amor después del amor",
+    "originalTitle": "El amor después del amor",
+    "year": 1992,
+    "cover": "/media/franco/musica/el-amor-despues-del-amor.jpg",
+    "creators": [
+      "Fito Páez"
+    ],
+    "cast": [],
+    "genres": [
+      "rock en español",
+      "pop rock"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera",
+      "verano"
+    ],
+    "moods": [
+      "alegre",
+      "energico"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-franco"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "El disco más vendido del rock argentino. 'Brillante sobre el mic' te la canto desde que estabas en la panza.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-23T11:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-musica-the-dark-side-of-the-moon",
+    "roomId": "franco",
+    "container": "musica",
+    "title": "The Dark Side of the Moon",
+    "originalTitle": "The Dark Side of the Moon",
+    "year": 1973,
+    "cover": "/media/franco/musica/the-dark-side-of-the-moon.jpg",
+    "creators": [
+      "Pink Floyd"
+    ],
+    "cast": [],
+    "genres": [
+      "rock progresivo",
+      "rock psicodélico"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "niebla"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "tranquilo",
+      "nostalgico"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-franco"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Ponete unos buenos auriculares, cerrá los ojos y dejate llevar por la música. Es un viaje cósmico que nunca pasa de moda.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-25T22:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-musica-artaud",
+    "roomId": "franco",
+    "container": "musica",
+    "title": "Artaud",
+    "originalTitle": "Artaud",
+    "year": 1973,
+    "cover": "/media/franco/musica/artaud.jpg",
+    "creators": [
+      "Pescado Rabioso",
+      "Luis Alberto Spinetta"
+    ],
+    "cast": [],
+    "genres": [
+      "rock acústico",
+      "poesía"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "tierno",
+      "tranquilo"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-franco"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "'Cantata de puentes amarillos' es poesía pura. El Flaco Spinetta nos enseñó que mañana es mejor.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-02-27T16:30:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-musica-thriller",
+    "roomId": "franco",
+    "container": "musica",
+    "title": "Thriller",
+    "originalTitle": "Thriller",
+    "year": 1982,
+    "cover": "/media/franco/musica/thriller.jpg",
+    "creators": [
+      "Michael Jackson"
+    ],
+    "cast": [],
+    "genres": [
+      "pop",
+      "funk"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "tormenta"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "energico",
+      "divertido"
+    ],
+    "stages": [
+      "ninez",
+      "adolescencia",
+      "siempre"
+    ],
+    "specialDates": [
+      "anio-nuevo",
+      "halloween"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "El solo de guitarra de Eddie Van Halen en Beat It y el baile de los zombis. Te vas a poner a bailar apenas arranque el bajo de Billie Jean.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-01T20:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-juegos-super-mario-64",
+    "roomId": "franco",
+    "container": "juegos",
+    "title": "Super Mario 64",
+    "originalTitle": "Super Mario 64",
+    "year": 1996,
+    "cover": "/media/franco/juegos/super-mario-64.jpg",
+    "creators": [
+      "Nintendo",
+      "Shigeru Miyamoto"
+    ],
+    "cast": [],
+    "genres": [
+      "plataformas 3D",
+      "aventura"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "verano"
+    ],
+    "moods": [
+      "alegre",
+      "valiente"
+    ],
+    "stages": [
+      "ninez"
+    ],
+    "specialDates": [
+      "cumple-amelia"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "La primera vez que corrí en mundos tridimensionales saltando a los cuadros en el castillo de Peach. Magia pura de mi niñez.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-03T15:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-juegos-pokemon-rojo-azul",
+    "roomId": "franco",
+    "container": "juegos",
+    "title": "Pokémon Rojo y Azul",
+    "originalTitle": "Pokémon Red and Blue",
+    "year": 1996,
+    "cover": "/media/franco/juegos/pokemon-rojo-azul.jpg",
+    "creators": [
+      "Game Freak",
+      "Satoshi Tajiri"
+    ],
+    "cast": [],
+    "genres": [
+      "RPG",
+      "aventura"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "alegre",
+      "valiente"
+    ],
+    "stages": [
+      "ninez"
+    ],
+    "specialDates": [
+      "cumple-amelia",
+      "halloween"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Elegir a Charmander en el Game Boy con pilas recargables bajo la luz de la lámpara. Una aventura inolvidable.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-05T17:30:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-flores-ceibo",
+    "roomId": "franco",
+    "container": "flores",
+    "title": "Ceibo",
+    "originalTitle": "Erythrina crista-galli",
+    "year": null,
+    "cover": "/media/franco/flores/ceibo.jpg",
+    "creators": [
+      "Naturaleza"
+    ],
+    "cast": [],
+    "genres": [
+      "autóctona",
+      "silvestre"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "valiente",
+      "energico"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-franco"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Nuestra flor nacional, roja, fuerte y resistente a orillas del río. Un símbolo hermoso de nuestra tierra.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-07T11:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-flores-jacaranda",
+    "roomId": "franco",
+    "container": "flores",
+    "title": "Jacarandá",
+    "originalTitle": "Jacaranda mimosifolia",
+    "year": null,
+    "cover": "/media/franco/flores/jacaranda.jpg",
+    "creators": [
+      "Naturaleza"
+    ],
+    "cast": [],
+    "genres": [
+      "árbol urbano",
+      "primaveral"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "alegre",
+      "nostalgico"
+    ],
+    "stages": [
+      "primeros-anios",
+      "siempre"
+    ],
+    "specialDates": [],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "En noviembre Buenos Aires se llena de alfombras violetas bajo los árboles. Caminar por la vereda con vos va a ser un sueño.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-09T13:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-flores-rosa",
+    "roomId": "franco",
+    "container": "flores",
+    "title": "Rosa",
+    "originalTitle": "Rosa gallica",
+    "year": null,
+    "cover": "/media/franco/flores/rosa.jpg",
+    "creators": [
+      "Naturaleza"
+    ],
+    "cast": [],
+    "genres": [
+      "clásica",
+      "fragante"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "tierno",
+      "nostalgico"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Clásica, delicada y con espinas para cuidarse. La belleza real siempre sabe defenderse con elegancia.",
+    "body": "",
+    "date": null,
+    "place": null,
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-11T14:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-fotos-obelisco",
+    "roomId": "franco",
+    "container": "fotos",
+    "title": "Obelisco de Buenos Aires",
+    "originalTitle": "Obelisco de Buenos Aires",
+    "year": 2024,
+    "cover": "/media/franco/fotos/obelisco.jpg",
+    "creators": [
+      "Franco"
+    ],
+    "cast": [],
+    "genres": [
+      "ciudad",
+      "nocturna"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "nublado"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "nostalgico",
+      "alegre"
+    ],
+    "stages": [
+      "embarazo",
+      "bebe"
+    ],
+    "specialDates": [],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "El corazón de nuestra querida Buenos Aires iluminado de noche. Acá festejamos campeonatos y caminamos mil veces con mamá soñando con tu llegada.",
+    "body": "Caminando por Avenida Corrientes después del teatro, con las luces de neón reflejadas en el asfalto y el Obelisco erguido contra las nubes porteñas.",
+    "date": "2024-05-18",
+    "place": "Avenida 9 de Julio, Buenos Aires",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-13T21:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-fotos-bariloche",
+    "roomId": "franco",
+    "container": "fotos",
+    "title": "San Carlos de Bariloche",
+    "originalTitle": "San Carlos de Bariloche",
+    "year": 2023,
+    "cover": "/media/franco/fotos/bariloche.jpg",
+    "creators": [
+      "Franco"
+    ],
+    "cast": [],
+    "genres": [
+      "montaña",
+      "nieve"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "nevado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "invierno"
+    ],
+    "moods": [
+      "tierno",
+      "alegre"
+    ],
+    "stages": [
+      "ninez"
+    ],
+    "specialDates": [
+      "cumple-franco"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "El lago Nahuel Huapi con los picos nevados detrás. Te prometo que te voy a llevar a armar muñecos de nieve y a comer chocolate caliente.",
+    "body": "Subimos al Cerro Campanario en aerosilla con un frío polar pero una vista panorámica de 360 grados que quita el aliento. Un paraíso patagónico.",
+    "date": "2023-07-22",
+    "place": "Bariloche, Río Negro",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-15T12:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-actividades-tenis",
+    "roomId": "franco",
+    "container": "actividades",
+    "title": "Tenis",
+    "originalTitle": "Tennis",
+    "year": null,
+    "cover": "/media/franco/actividades/tenis.jpg",
+    "creators": [
+      "Deporte"
+    ],
+    "cast": [],
+    "genres": [
+      "deporte",
+      "raqueta"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "energico",
+      "divertido"
+    ],
+    "stages": [
+      "ninez",
+      "adolescencia"
+    ],
+    "specialDates": [
+      "cumple-franco"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Ese sonido inconfundible de pegarle a la pelota con el centro de la raqueta. Ya tengo una raquetita chiquita guardada para que peloteemos juntos.",
+    "body": "El polvo de ladrillo manchando las zapatillas, el esfuerzo físico en cada pique y la charla relajada al terminar el partido con amigos.",
+    "date": "2026-02-10",
+    "place": "Canchas de polvo de ladrillo",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-17T10:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-moodboard-fiat-600",
+    "roomId": "franco",
+    "container": "moodboard",
+    "title": "Fiat 600",
+    "originalTitle": "Fiat 600",
+    "year": null,
+    "cover": "/media/franco/moodboard/fiat-600.jpg",
+    "creators": [
+      "Fiat"
+    ],
+    "cast": [],
+    "genres": [
+      "automovilismo",
+      "clásico"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "nostalgico",
+      "divertido"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-franco"
+    ],
+    "tags": [
+      "autos"
+    ],
+    "rating": 5,
+    "ownerNote": "El querido Fitito, el auto más simpático que rodó por nuestras calles. En uno de estos dimos más de una vuelta con amigos.",
+    "body": "Ese motorcito trasero inconfundible, las puertas suicidas de los primeros modelos y la hazaña de meter a toda la familia adentro para ir a la playa.",
+    "date": null,
+    "place": "Avenida del Libertador",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-19T14:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-moodboard-la-fiorino-blanca",
+    "roomId": "franco",
+    "container": "moodboard",
+    "title": "Mi primer utilitario y las anécdotas de ruta",
+    "originalTitle": "Mi primer utilitario y las anécdotas de ruta",
+    "year": 2026,
+    "cover": null,
+    "creators": [
+      "Franco"
+    ],
+    "cast": [],
+    "genres": [
+      "anécdota",
+      "trabajo"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "nublado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "nostalgico",
+      "divertido"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [],
+    "tags": [
+      "autos"
+    ],
+    "rating": 5,
+    "ownerNote": "Un fierro fiel que jamás me dejó a pata en ninguna mudanza ni entrega de laburo.",
+    "body": "Tengo un cariño entrañable por las camionetitas nobles y rendidoras. Esas que cargan herramientas, bultos y miles de kilómetros de ruta sin quejarse nunca. La Fiorino blanca es casi un miembro más de la familia de laburo: aguantó calor, tormentas de viento y baches con el mismo espíritu incansable que espero transmitirte en cada desafío.",
+    "date": "2026-01-15",
+    "place": "Ruta 2",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-21T15:30:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-moodboard-milanesas-con-pure",
+    "roomId": "franco",
+    "container": "moodboard",
+    "title": "El ranking definitivo de las milanesas",
+    "originalTitle": "El ranking definitivo de las milanesas",
+    "year": 2026,
+    "cover": null,
+    "creators": [
+      "Franco"
+    ],
+    "cast": [],
+    "genres": [
+      "gastronomía",
+      "costumbre"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "invierno"
+    ],
+    "moods": [
+      "alegre",
+      "divertido"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-franco"
+    ],
+    "tags": [
+      "comida"
+    ],
+    "rating": 5,
+    "ownerNote": "Las milanesas con puré son sagradas; papá te las va a cocinar doraditas y crocantes.",
+    "body": "El plato indiscutido de los campeones: milanesas de nalga bien crocantes, hechas en casa con ajo picadito, perejil fresco y pan rallado de panadería, acompañadas por un volcán de puré de papas con abundante manteca y nuez moscada. Si mamá no mira, le ponemos abundante limón por encima. No hay restaurante cinco estrellas que le compita a esta delicia hogareña.",
+    "date": "2026-02-20",
+    "place": "El comedor de casa",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-23T13:00:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-moodboard-la-luz-de-la-manana",
+    "roomId": "franco",
+    "container": "moodboard",
+    "title": "Café en silencio mirando el balcón",
+    "originalTitle": "Café en silencio mirando el balcón",
+    "year": 2026,
+    "cover": null,
+    "creators": [
+      "Franco"
+    ],
+    "cast": [],
+    "genres": [
+      "rutina",
+      "pensamiento"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "tranquilo",
+      "nostalgico"
+    ],
+    "stages": [
+      "siempre"
+    ],
+    "specialDates": [
+      "anio-nuevo"
+    ],
+    "tags": [
+      "observaciones"
+    ],
+    "rating": 5,
+    "ownerNote": "La paz de la primera hora del día es donde encuentro las mejores ideas para el trabajo.",
+    "body": "Despertarse antes que todos, cebar los primeros mates amargos o colar un café humeante y ver cómo el sol asoma entre las copas de los árboles mientras la ciudad todavía duerme. En esos quince minutos de silencio absoluto se ordenan todas las prioridades del día y se agradece la bendición de la familia que estamos construyendo.",
+    "date": "2026-03-05",
+    "place": "Balcón",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-25T07:30:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-moodboard-guitarra-criolla-vs-electrica",
+    "roomId": "franco",
+    "container": "moodboard",
+    "title": "Acústica para arrullar, eléctrica para saltar",
+    "originalTitle": "Acústica para arrullar, eléctrica para saltar",
+    "year": 2026,
+    "cover": null,
+    "creators": [
+      "Franco"
+    ],
+    "cast": [],
+    "genres": [
+      "música",
+      "comparativa"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "tormenta",
+      "soleado"
+    ],
+    "daytime": "cualquiera",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "energico",
+      "divertido"
+    ],
+    "stages": [
+      "adolescencia",
+      "siempre"
+    ],
+    "specialDates": [
+      "cumple-franco"
+    ],
+    "tags": [
+      "comparativas"
+    ],
+    "rating": 5,
+    "ownerNote": "Cada una tiene su momento; pronto vas a tener tus propios dedos en los acordes.",
+    "body": "La criolla de madera noble está siempre a mano apoyada en el sillón para improvisar una zamba tranquila o una canción de cuna suavecita que te ayude a dormir; la eléctrica con distorsión conectada al amplificador es para descargar tensiones y cantar saltando un sábado a la tarde. Las dos son imprescindibles y ya tienen un lugar guardado para vos.",
+    "date": "2026-03-12",
+    "place": "El rincón de música",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-27T18:40:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-diario-la-noticia-mas-linda",
+    "roomId": "franco",
+    "container": "diario",
+    "title": "El mate más emocionante de mi vida",
+    "originalTitle": "El mate más emocionante de mi vida",
+    "year": 2025,
+    "cover": null,
+    "creators": [
+      "Franco"
+    ],
+    "cast": [],
+    "genres": [
+      "recuerdo familiar"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "otono"
+    ],
+    "moods": [
+      "alegre",
+      "tierno"
+    ],
+    "stages": [
+      "embarazo"
+    ],
+    "specialDates": [
+      "cumple-franco"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "El mejor regalo que recibí en mi vida, en medio de la cocina con el mate en la mano.",
+    "body": "Estaba preparando el agua caliente en la pava cuando Mariana entró a la cocina con una cajita y los ojos vidriosos. La abrí temblando y adentro estaba el test con las dos rayas bien marcadas. Se me aflojaron las piernas y me senté en la banqueta sin poder emitir palabra por casi un minuto, con una felicidad tan inmensa y abrumadora que no me cabía en el cuerpo. Nos fundimos en un abrazo interminable mientras el agua de la pava silbaba de fondo. Te deseamos con toda nuestra alma, Amelia, y saber que ya crecías adentro de mamá fue el regalo más hermoso de mi vida entera.",
+    "date": "2025-06-15",
+    "place": "La cocina de casa",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-29T08:30:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-diario-escuchando-vinilos-esperandote",
+    "roomId": "franco",
+    "container": "diario",
+    "title": "Música para que escuches en la panza",
+    "originalTitle": "Música para que escuches en la panza",
+    "year": 2025,
+    "cover": null,
+    "creators": [
+      "Franco"
+    ],
+    "cast": [],
+    "genres": [
+      "recuerdo familiar"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "nublado"
+    ],
+    "daytime": "nocturno",
+    "seasons": [
+      "invierno"
+    ],
+    "moods": [
+      "nostalgico",
+      "tranquilo"
+    ],
+    "stages": [
+      "embarazo"
+    ],
+    "specialDates": [],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "Cada acorde de Spinetta que sonaba te hacía dar pequeñas pataditas de complicidad.",
+    "body": "Puse a girar el vinilo de Artaud en el tocadiscos y acerqué mi oreja bien despacito a la panza de mamá. Es increíble pero cada vez que suena la guitarra de Spinetta o la voz dulce de Charly García, empezás a moverte como si ya sintieras el ritmo de las cuerdas. Mamá se ríe y me dice que vas a salir música y rockera de pura cepa. Yo sólo quiero que la música te acompañe siempre en cada paso que des, que sea tu abrazo en los momentos difíciles y tu bandera de festejo en los días felices.",
+    "date": "2025-09-05",
+    "place": "El living",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-03-31T21:15:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  },
+  {
+    "id": "franco-diario-armando-la-cuna",
+    "roomId": "franco",
+    "container": "diario",
+    "title": "Ajustando los tornillos de tu cuna",
+    "originalTitle": "Ajustando los tornillos de tu cuna",
+    "year": 2025,
+    "cover": null,
+    "creators": [
+      "Franco"
+    ],
+    "cast": [],
+    "genres": [
+      "recuerdo familiar"
+    ],
+    "audience": "ATP",
+    "weather": [
+      "soleado"
+    ],
+    "daytime": "diurno",
+    "seasons": [
+      "primavera"
+    ],
+    "moods": [
+      "divertido",
+      "tierno"
+    ],
+    "stages": [
+      "embarazo"
+    ],
+    "specialDates": [
+      "navidad"
+    ],
+    "tags": [],
+    "rating": 5,
+    "ownerNote": "La armé y la desarmé tres veces para estar cien por ciento seguro de que no se moviera un milímetro.",
+    "body": "Esta tarde me propuse armar tu cunita de madera blanca siguiendo un manual con diez dibujos incomprensibles. Mariana me miraba desde la puerta muerta de risa porque me sobraban dos tuercas y no entendía dónde iban colocadas. Desarmé la baranda tres veces hasta que quedó firme, segura e impecable. Después le colocamos el acolchado con estrellitas y nos quedamos los dos parados mirando ese espacio vacío que dentro de muy poquito va a tenerte a vos durmiendo en paz. Ya no veo la hora de tenerte en mis brazos, pequeña Amelia.",
+    "date": "2025-12-02",
+    "place": "Tu cuarto",
+    "gallery": [],
+    "videoUrl": null,
+    "likes": 0,
+    "createdAt": "2026-04-03T17:45:00.000Z",
+    "addedBy": "Franco",
+    "visibility": "publico"
+  }
+]

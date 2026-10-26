@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Production build
+client/dist/
+
+# SQLite databases
+*.db
+*.db-journal
+data/*.db
+data/*.db-journal
+
+# Environment variables
+.env
+.env.local
+
+# Python / Scripts
+.venv/
+__pycache__/
+*.pyc
+scripts/out/
+
+# OS files
+.DS_Store
+Thumbs.db
