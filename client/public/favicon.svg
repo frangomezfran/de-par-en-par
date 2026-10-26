@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Marco de madera (fondo transparente, sin recuadro ni pared/piso) -->
+  <path
+    d="M12 57V6a2 2 0 0 1 2-2h36a2 2 0 0 1 2 2v51Z"
+    fill="#6e3f1f"
+    stroke="#2a1810"
+    stroke-width="2.6"
+    stroke-linejoin="round"
+  />
+
+  <!-- Ingreso iluminado amarillo -->
+  <rect
+    x="17"
+    y="9"
+    width="30"
+    height="48"
+    fill="#ffd966"
+    stroke="#2a1810"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+
+  <!-- Única puerta de madera lisa semiabierta -->
+  <polygon
+    points="17,9 38,14 38,61 17,57"
+    fill="#a46334"
+    stroke="#2a1810"
+    stroke-width="2.6"
+    stroke-linejoin="round"
+  />
+
+  <!-- Picaporte simple -->
+  <circle
+    cx="32.5"
+    cy="37"
+    r="2.8"
+    fill="#ffe074"
+    stroke="#2a1810"
+    stroke-width="2"
+  />
+</svg>

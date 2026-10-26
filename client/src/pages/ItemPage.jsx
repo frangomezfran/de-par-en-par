@@ -16,6 +16,7 @@ import {
   STAGE_LABELS,
   TAG_LABELS,
   WEATHER_LABELS,
+  pageTitle,
 } from '../lib/labels.js'
 import { getItem, getItems } from '../lib/api.js'
 import useSession from '../lib/session.js'
@@ -160,6 +161,7 @@ export default function ItemPage() {
 
   useEffect(() => {
     if (!valid) return
+    if (CONTAINERS[container]) document.title = pageTitle(name, CONTAINERS[container].label)
     let alive = true
     setItem(null)
     setError('')
@@ -168,7 +170,7 @@ export default function ItemPage() {
       .then((it) => {
         if (!alive) return
         setItem(it)
-        document.title = `${it.title} · Favoritos de ${ROOM_NAMES[it.roomId]}`
+        document.title = pageTitle(ROOM_NAMES[it.roomId], CONTAINERS[it.container]?.label)
         // ¿También está en la otra pieza? (comparativa)
         const keys = [norm(it.originalTitle), norm(it.title)].filter(Boolean)
         getItems({ room: OTHER_ROOM[it.roomId], container: it.container })
@@ -182,7 +184,7 @@ export default function ItemPage() {
     return () => {
       alive = false
     }
-  }, [valid, itemId])
+  }, [valid, itemId, name, container])
 
   useEffect(() => {
     if (!item) return

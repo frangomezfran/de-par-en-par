@@ -7,7 +7,7 @@ import AddItemForm from '../components/AddItemForm.jsx'
 import Cover from '../components/Cover.jsx'
 import { ROOM_CONTAINERS, ROOM_NAMES, canAdd, metaLine } from '../components/containerMeta.js'
 import useSession from '../lib/session.js'
-import { CONTAINERS, DAYTIME_LABELS, SPECIAL_DATE_LABELS, WEATHER_LABELS } from '../lib/labels.js'
+import { CONTAINERS, DAYTIME_LABELS, SPECIAL_DATE_LABELS, WEATHER_LABELS, pageTitle } from '../lib/labels.js'
 import { getItems } from '../lib/api.js'
 import { applyFilters, facetOptions, parseFilters, toSearchParams } from '../lib/filters.js'
 import useWeather from '../lib/useWeather.js'
@@ -76,7 +76,7 @@ export default function ContainerPage() {
   }, [filters, isWindow, weather, searchParams])
 
   useEffect(() => {
-    if (valid) document.title = `${CONTAINERS[container].label} · Favoritos de ${name}`
+    if (valid) document.title = pageTitle(name, CONTAINERS[container].label)
   }, [valid, container, name])
 
   const load = useCallback(() => {

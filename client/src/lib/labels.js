@@ -111,3 +111,8 @@ export const AUDIENCE_LABELS = {
   '+16': '+16',
   '+18': '+18'
 };
+
+/** Formato uniforme para el título de la pestaña: Deparenpar | Habitación | Contenedor */
+export function pageTitle(...parts) {
+  return ['Deparenpar', ...parts.filter(Boolean)].join(' | ');
+}

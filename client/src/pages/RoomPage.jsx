@@ -5,6 +5,7 @@ import useWeather from '../lib/useWeather.js'
 import useSession, { logout } from '../lib/session.js'
 import { currentFestivity } from '../lib/specialDates.js'
 import { ROOM_PLACE } from '../lib/place.js'
+import { pageTitle } from '../lib/labels.js'
 import mariana from '../rooms/mariana.json'
 import franco from '../rooms/franco.json'
 
@@ -59,7 +60,7 @@ export default function RoomPage() {
   const festivity = currentFestivity()
 
   useEffect(() => {
-    if (room) document.title = `La pieza de ${room.name} · Amelia`
+    if (room) document.title = pageTitle(room.name)
   }, [room])
 
   useEffect(() => {

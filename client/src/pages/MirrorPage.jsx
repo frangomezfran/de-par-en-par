@@ -4,7 +4,7 @@ import ArchiveLayout from '../components/ArchiveLayout.jsx'
 import Cover from '../components/Cover.jsx'
 import { StarRating, starsText } from '../components/Stars.jsx'
 import { OTHER_ROOM, ROOM_NAMES } from '../components/containerMeta.js'
-import { CONTAINERS } from '../lib/labels.js'
+import { CONTAINERS, pageTitle } from '../lib/labels.js'
 import { getCoincidences } from '../lib/api.js'
 
 const stars = (v) => starsText(v)
@@ -73,7 +73,7 @@ export default function MirrorPage() {
 
   useEffect(() => {
     if (!valid) return
-    document.title = `Coincidencias · Favoritos de ${ROOM_NAMES[roomId]}`
+    document.title = pageTitle(ROOM_NAMES[roomId], CONTAINERS.espejo.label)
     getCoincidences()
       .then(setPairs)
       .catch((e) => setError(e.message))

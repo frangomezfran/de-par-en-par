@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import LoginDialog from '../components/LoginDialog.jsx'
 import useSession from '../lib/session.js'
+import { pageTitle } from '../lib/labels.js'
 import lobby from '../rooms/lobby.json'
 
 const OWNERS = { mariana: 'Mariana', franco: 'Franco' }
@@ -46,7 +47,7 @@ export default function Home() {
   const timer = useRef(null)
 
   useEffect(() => {
-    document.title = 'Amelia'
+    document.title = pageTitle()
     return () => clearTimeout(timer.current)
   }, [])
 
@@ -73,7 +74,7 @@ export default function Home() {
 
   return (
     <main className={`lobby${opening ? ' is-leaving' : ''}`}>
-      <h1 className="sr-only">La casa de Amelia</h1>
+      <h1 className="sr-only">Deparenpar</h1>
       <div className="lobby__stage">
         <img
           className="lobby__bg"
