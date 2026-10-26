@@ -1,0 +1,16 @@
+{
+  "name": "de-par-en-par",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build:cf": "node worker/build-cf.mjs",
+    "cf:schema": "wrangler d1 execute de-par-en-par-db --remote --file=worker/schema.sql",
+    "cf:export-local": "node worker/export-local-db.mjs",
+    "cf:seed-local": "node worker/export-local-db.mjs && wrangler d1 execute de-par-en-par-db --remote --file=worker/seed.local.sql",
+    "cf:deploy": "npm run build:cf && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.14.0"
+  }
+}

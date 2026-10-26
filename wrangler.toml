@@ -1,0 +1,17 @@
+name = "de-par-en-par"
+main = "worker/index.js"
+compatibility_date = "2025-04-01"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = false
+preview_urls = false
+
+[assets]
+directory = "./client/dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+run_worker_first = ["/api/*", "/media/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "de-par-en-par-db"
+database_id = "07fd1efa-a122-4154-8f92-d22482009cd2"

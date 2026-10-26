@@ -5,6 +5,9 @@ server/node_modules/
 
 # Production build
 client/dist/
+worker/generated-static-media.json
+worker/*.local.sql
+.wrangler/
 
 # SQLite databases
 *.db

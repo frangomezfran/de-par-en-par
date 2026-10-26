@@ -2,6 +2,10 @@ node_modules
 client/node_modules
 server/node_modules
 client/dist
+worker
+wrangler.toml
+.wrangler
+.github
 .venv
 __pycache__
 scripts/out
