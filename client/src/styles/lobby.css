@@ -8,20 +8,22 @@
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 100svh;
+  height: 100svh;
+  height: 100dvh;
   overflow: hidden;
   /* si la pantalla es más alta que la imagen, arriba sigue la pared y abajo el piso */
   background: linear-gradient(to bottom, #c2e4ec 0 50%, #d6a779 50% 100%);
 }
 
-/* La imagen siempre cubre la pantalla; en celulares se recorta a los costados
-   pero las dos puertas entran siempre */
+/* La imagen siempre cubre la pantalla sin comer el piso ni las puertas abajo;
+   en celulares se recorta a los costados pero las dos puertas entran siempre */
 .lobby__stage {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: min(max(100vw, 100svh * var(--ratio)), 100vw / 0.46);
+  transform: translateX(-50%);
+  width: min(max(100vw, 100svh * var(--ratio)), 118svh * var(--ratio), 100vw / 0.46);
+  width: min(max(100vw, 100dvh * var(--ratio)), 118dvh * var(--ratio), 100vw / 0.46);
   aspect-ratio: 3168 / 1344;
 }
 

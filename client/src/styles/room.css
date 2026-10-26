@@ -7,6 +7,7 @@
   --ratio: calc(2752 / 1536);
   position: relative;
   height: 100svh;
+  height: 100dvh;
   overflow: hidden;
   background: #1d1a18;
 }
@@ -18,15 +19,16 @@
   overflow: hidden;
 }
 
-/* Cubre la pantalla: en monitores 16:9 se ve entera; en otras proporciones se
-   recorta lo mínimo y parejo */
+/* Se apoya en el borde inferior (arriba de la barra de tareas) para no recortar nunca
+   el piso ni los objetos bajos cuando el navegador tiene pestañas/barras visibles */
 .scene__stage {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 50%;
-  width: max(100vw, 100svh * var(--ratio));
+  width: min(max(100vw, 100svh * var(--ratio)), 138svh * var(--ratio));
+  width: min(max(100vw, 100dvh * var(--ratio)), 138dvh * var(--ratio));
   aspect-ratio: 2752 / 1536;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 
 /* Pantallas verticales: la pieza ocupa todo el alto y se recorre de costado */
@@ -45,6 +47,7 @@
   .scene__stage {
     position: relative;
     top: 0;
+    bottom: auto;
     left: 0;
     width: auto;
     height: 100%;
