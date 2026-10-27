@@ -140,21 +140,29 @@ function parseUsers(raw = '', rooms = []) {
   const byName = new Map(rooms.map((r) => [String(r.name).toLowerCase(), r.id]));
   const familyList = [];
   const ownerList = [];
+  const readonlyList = [];
   const clean = (raw || '').replace(/^["']|["']$/g, '').trim();
   for (const pair of clean.split(',')) {
-    const idx = pair.indexOf(':');
+    let entry = pair.trim();
+    let isReadonly = false;
+    if (/:readonly$/i.test(entry)) {
+      isReadonly = true;
+      entry = entry.replace(/:readonly$/i, '').trim();
+    }
+    const idx = entry.indexOf(':');
     if (idx === -1) continue;
-    const name = pair.slice(0, idx).trim();
-    const code = pair.slice(idx + 1).trim();
+    const name = entry.slice(0, idx).trim();
+    const code = entry.slice(idx + 1).trim();
     if (!name || !code) continue;
     const roomId = byName.get(name.toLowerCase());
-    if (roomId) ownerList.push({ roomId, name, code });
+    if (isReadonly) readonlyList.push({ name, code });
+    else if (roomId) ownerList.push({ roomId, name, code });
     else familyList.push({ name, code });
   }
-  return { familyList, ownerList };
+  return { familyList, ownerList, readonlyList };
 }
 
-function verifyPasscode(passcode, { familyList = [], ownerList = [] } = {}) {
+function verifyPasscode(passcode, { familyList = [], ownerList = [], readonlyList = [] } = {}) {
   if (!passcode || typeof passcode !== 'string') return null;
   const trimmed = passcode.trim();
   if (!trimmed) return null;
@@ -166,6 +174,11 @@ function verifyPasscode(passcode, { familyList = [], ownerList = [] } = {}) {
   for (const f of familyList) {
     if (timingSafeEqualStrings(trimmed, f.code)) {
       return { name: f.name, role: 'familia' };
+    }
+  }
+  for (const r of readonlyList) {
+    if (timingSafeEqualStrings(trimmed, r.code)) {
+      return { name: r.name, role: 'readonly' };
     }
   }
   return null;
@@ -1007,7 +1020,7 @@ async function handleApi(request, env, url) {
     return jsonRes({ error: 'Pará un poquito, probá de nuevo en unos minutos.' }, 429);
   }
 
-  const passcodes = parseUsers(env.USERS || 'Mariana:mariana,Franco:franco,Amelia:amelia', roomsData);
+  const passcodes = parseUsers(env.USERS || 'Mariana:mariana,Franco:franco,Amelia:amelia,Visita:visita:readonly', roomsData);
   const viewer = verifyPasscode(request.headers.get('x-amelia-pass'), passcodes);
   const seesPrivate = viewer?.role === 'owner';
   const isVisible = (v, item) => Boolean(item && (item.visibility !== 'privado' || v?.role === 'owner'));
@@ -1056,6 +1069,7 @@ async function handleApi(request, env, url) {
 
   // GET /api/lookup
   if (method === 'GET' && path === '/api/lookup') {
+    if (viewer?.role === 'readonly') return jsonRes({ error: 'Tu usuario es de solo lectura.' }, 403);
     const container = String(url.searchParams.get('container') || '');
     const q = String(url.searchParams.get('q') || '').trim().slice(0, 120);
     if (!LOOKUP_CONTAINERS.includes(container) || q.length < 2) return jsonRes([]);
@@ -1258,6 +1272,7 @@ async function handleApi(request, env, url) {
     }
 
     if (sub === 'like' && method === 'POST') {
+      if (viewer?.role === 'readonly') return jsonRes({ error: 'Tu usuario es de solo lectura.' }, 403);
       const item = await getItemById(env.DB, itemId);
       if (!isVisible(viewer, item)) return jsonRes({ error: 'No encontramos ese ítem.' }, 404);
 

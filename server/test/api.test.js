@@ -29,7 +29,7 @@ test.before(async () => {
 
   db = new AmeliaDb(path.join(tempDir, 'test.db'), tempDir);
   db.seedIfEmpty();
-  const passcodes = parseUsers('Mariana:mariana,Franco:franco,Amelia:amelia', db.getRooms());
+  const passcodes = parseUsers('Mariana:mariana,Franco:franco,Amelia:amelia,Visita:visita:readonly', db.getRooms());
   const app = createApp({ db, dataDir: tempDir, passcodes, clientDist: null });
 
   await new Promise((resolve) => {
@@ -160,7 +160,23 @@ test('POST /api/auth/check', async () => {
   assert.deepEqual(fam.data, { name: 'Amelia', role: 'familia' });
   const owner = await api('/api/auth/check', json({ passcode: 'franco' }));
   assert.deepEqual(owner.data, { name: 'Franco', role: 'owner', roomId: 'franco' });
+  const ro = await api('/api/auth/check', json({ passcode: 'visita' }));
+  assert.deepEqual(ro.data, { name: 'Visita', role: 'readonly' });
   assert.equal((await api('/api/auth/check', json({ passcode: 'invalido' }))).status, 401);
+});
+
+test('readonly (visita): puede leer lo público pero no dar me gusta ni modificar nada', async () => {
+  const itemId = 'mariana-peliculas-buscando-a-nemo';
+  assert.equal((await api('/api/items?room=mariana&container=peliculas', {}, 'visita')).status, 200);
+  assert.equal((await api(`/api/items/${itemId}`, {}, 'visita')).status, 200);
+  assert.equal((await api(`/api/items/${itemId}/like`, { method: 'POST' }, 'visita')).status, 403);
+  assert.equal((await api(`/api/items/${itemId}/comments`, json({ passcode: 'visita', body: 'Hola' }), 'visita')).status, 403);
+  assert.equal(
+    (await api('/api/items', { method: 'POST', body: itemForm({ roomId: 'mariana', container: 'peliculas', title: 'Test', passcode: 'visita' }) }, 'visita')).status,
+    403,
+  );
+  assert.equal((await api(`/api/items/${itemId}`, { method: 'DELETE' }, 'visita')).status, 403);
+  assert.equal((await api('/api/lookup?container=peliculas&q=nemo', {}, 'visita')).status, 403);
 });
 
 test('GET /api/stats: compara con la otra pieza', async () => {

@@ -20,24 +20,32 @@ export function parseUsers(raw = '', rooms = []) {
   const byName = new Map(rooms.map((r) => [String(r.name).toLowerCase(), r.id]));
   const familyList = [];
   const ownerList = [];
+  const readonlyList = [];
   const clean = (raw || '').replace(/^["']|["']$/g, '').trim();
   for (const pair of clean.split(',')) {
-    const idx = pair.indexOf(':');
+    let entry = pair.trim();
+    let isReadonly = false;
+    if (/:readonly$/i.test(entry)) {
+      isReadonly = true;
+      entry = entry.replace(/:readonly$/i, '').trim();
+    }
+    const idx = entry.indexOf(':');
     if (idx === -1) continue;
-    const name = pair.slice(0, idx).trim();
-    const code = pair.slice(idx + 1).trim();
+    const name = entry.slice(0, idx).trim();
+    const code = entry.slice(idx + 1).trim();
     if (!name || !code) continue;
     const roomId = byName.get(name.toLowerCase());
-    if (roomId) ownerList.push({ roomId, name, code });
+    if (isReadonly) readonlyList.push({ name, code });
+    else if (roomId) ownerList.push({ roomId, name, code });
     else familyList.push({ name, code });
   }
-  return { familyList, ownerList };
+  return { familyList, ownerList, readonlyList };
 }
 
 /**
  * Validates a passcode and returns user credentials or null.
  */
-export function verifyPasscode(passcode, { familyList = [], ownerList = [] } = {}) {
+export function verifyPasscode(passcode, { familyList = [], ownerList = [], readonlyList = [] } = {}) {
   if (!passcode || typeof passcode !== 'string') return null;
   const trimmed = passcode.trim();
   if (!trimmed) return null;
@@ -59,6 +67,16 @@ export function verifyPasscode(passcode, { familyList = [], ownerList = [] } = {
       return {
         name: f.name,
         role: 'familia'
+      };
+    }
+  }
+
+  // Check read-only passcodes
+  for (const r of readonlyList) {
+    if (timingSafeEqualStrings(trimmed, r.code)) {
+      return {
+        name: r.name,
+        role: 'readonly'
       };
     }
   }

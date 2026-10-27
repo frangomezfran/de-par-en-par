@@ -40,8 +40,8 @@ db.seedIfEmpty();
 
 // Usuarios (Nombre:clave). Por defecto: la clave es el nombre en minúsculas.
 const rooms = db.getRooms();
-const passcodes = parseUsers(process.env.USERS || 'Mariana:mariana,Franco:franco,Amelia:amelia', rooms);
-console.log(`[Server] Usuarios: ${[...passcodes.ownerList, ...passcodes.familyList].map((u) => u.name).join(', ')}`);
+const passcodes = parseUsers(process.env.USERS || 'Mariana:mariana,Franco:franco,Amelia:amelia,Visita:visita:readonly', rooms);
+console.log(`[Server] Usuarios: ${[...passcodes.ownerList, ...passcodes.familyList, ...passcodes.readonlyList].map((u) => u.name).join(', ')}`);
 
 const app = createApp({
   db,

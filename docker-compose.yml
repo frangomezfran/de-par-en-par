@@ -11,7 +11,7 @@ services:
       - PORT=3001
       - DATA_DIR=/app/data
       - CLIENT_DIST=/app/client/dist
-      - USERS=${USERS:-Mariana:mariana,Franco:franco,Amelia:amelia}
+      - USERS=${USERS:-Mariana:mariana,Franco:franco,Amelia:amelia,Visita:visita:readonly}
     volumes:
       - ./data:/app/data
     restart: unless-stopped

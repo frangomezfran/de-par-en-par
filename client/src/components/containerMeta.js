@@ -37,6 +37,9 @@ export const canComment = (session, item) => session?.role === 'owner' && sessio
 /** ¿Puede modificarlo? (solo quien lo agregó) */
 export const canEdit = (session, item) => Boolean(session && item?.addedBy && session.name === item.addedBy)
 
+/** ¿Puede dar "me gusta"? (todos salvo los usuarios de solo lectura) */
+export const canLike = (session) => Boolean(session && session.role !== 'readonly')
+
 /**
  * Número de inventario estable por pieza + contenedor, en orden de llegada:
  * MAR.PEL.001, FRA.CAF.002…

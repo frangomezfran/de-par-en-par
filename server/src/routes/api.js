@@ -211,6 +211,9 @@ export function createApiRouter({ db, dataDir, passcodes }) {
 
   // POST /api/items/:id/like
   router.post('/items/:id/like', (req, res) => {
+    if (req.viewer?.role === 'readonly') {
+      return res.status(403).json({ error: 'Tu usuario es de solo lectura.' });
+    }
     if (!visible(req, db.getItemById(req.params.id))) return res.status(404).json({ error: 'No encontramos ese ítem.' });
     const clientIp = req.ip || req.socket.remoteAddress || '127.0.0.1';
     const result = db.addLike(req.params.id, clientIp);
@@ -365,6 +368,9 @@ export function createApiRouter({ db, dataDir, passcodes }) {
 
   // GET /api/lookup?container=&q=  (asistente del alta)
   router.get('/lookup', async (req, res) => {
+    if (req.viewer?.role === 'readonly') {
+      return res.status(403).json({ error: 'Tu usuario es de solo lectura.' });
+    }
     const container = String(req.query.container || '');
     const q = String(req.query.q || '').trim().slice(0, 120);
     if (!LOOKUP_CONTAINERS.includes(container) || q.length < 2) return res.json([]);

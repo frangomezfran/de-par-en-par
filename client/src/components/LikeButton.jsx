@@ -1,11 +1,22 @@
 import { useState } from 'react'
 import { likeItem } from '../lib/api.js'
+import useSession from '../lib/session.js'
+import { canLike } from './containerMeta.js'
 
 /** "Me gusta": uno por persona cada tanto (lo controla el servidor) */
 export default function LikeButton({ itemId, initial = 0 }) {
+  const session = useSession()
   const [likes, setLikes] = useState(initial)
   const [state, setState] = useState('idle') // idle | sending | done | repeat | error
   const [msg, setMsg] = useState('')
+
+  if (!canLike(session)) {
+    return (
+      <p className="like">
+        <span aria-hidden="true">♡</span> me gusta <span className="like__count">({likes})</span>
+      </p>
+    )
+  }
 
   async function like() {
     if (state === 'sending') return
