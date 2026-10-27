@@ -9,7 +9,7 @@
  *   - OpenStreetMap / Nominatim + Open Food Facts + catálogo propio (café)
  */
 
-const UA = 'PaginaAmelia/2.0 (proyecto familiar)';
+const UA = 'Deparenpar/2.0 (https://deparenpar.com.ar; proyecto familiar)';
 const TIMEOUT = 8000;
 
 /** Hosts de los que el servidor acepta descargar portadas (evita SSRF) */
@@ -93,49 +93,68 @@ function base(partial) {
   };
 }
 
-// ---------- iTunes ----------
+// ---------- Música (Wikipedia + Wikidata: canciones y álbumes) ----------
 
-async function itunes(q, entity, limit) {
-  const url = `https://itunes.apple.com/search?${new URLSearchParams({ term: q, entity, limit: String(limit), country: 'AR', lang: 'es_es' })}`;
-  const data = await getJson(url);
-  return data.results ?? [];
+const MUSIC_RE =
+  /\b(song|single|track|ballad|instrumental|composition|album|ep|lp|soundtrack|record|canción|cancion|sencillo|tema musical|balada|álbum|disco|banda sonora|grabación)\b/i;
+
+const ALBUM_QIDS = new Set(['Q482994', 'Q208569', 'Q209939', 'Q222910', 'Q169930', 'Q24672048']);
+const SONG_QIDS = new Set(['Q7366', 'Q134556', 'Q105543609', 'Q2188189', 'Q207628']);
+
+function guessArtistFromText(desc = '') {
+  const en = desc.match(
+    /\b(?:song|single|track|ballad|album|ep|record) by (?:the [a-z -]+? (?:band|group|duo) )?([A-Z0-9][\p{L}\p{N}.'& -]{1,45}?)(?:[,.;()]| from | released | recorded | written |$)/iu,
+  );
+  if (en) return [en[1].trim()];
+  const es = desc.match(
+    /\b(?:canción|sencillo|balada|tema|álbum|disco)(?: [a-záéíóúñ]+){0,3} (?:de (?:la banda|el grupo|el dúo|el músico|la cantante|el cantante) [a-záéíóúñ ]+? |de )([A-ZÁÉÍÓÚÑ0-9][\p{L}\p{N}.'& -]{1,45}?)(?:[,.;()]| incluido| lanzado| publicado| grabado| del álbum|$)/u,
+  );
+  return es ? [es[1].trim()] : [];
 }
 
-const art = (u, size) => (u ? u.replace(/\/\d+x\d+bb\./, `/${size}bb.`) : null);
-
 async function music(q) {
-  const [albums, songs] = await Promise.all([itunes(q, 'album', 6), itunes(q, 'song', 4)]);
-  return [
-    ...albums.map((a) =>
-      base({
-        source: 'iTunes',
-        kind: 'álbum',
-        title: a.collectionName,
-        originalTitle: a.collectionName,
-        year: year(a.releaseDate),
-        creators: [a.artistName],
-        genres: genresEs([a.primaryGenreName]),
-        cover: art(a.artworkUrl100, '600x600'),
-        url: a.collectionViewUrl,
-        tags: ['album'],
-      }),
-    ),
-    ...songs.map((s) =>
-      base({
-        source: 'iTunes',
-        kind: 'canción',
-        title: s.trackName,
-        originalTitle: s.trackName,
-        year: year(s.releaseDate),
-        creators: [s.artistName],
-        genres: genresEs([s.primaryGenreName]),
-        cover: art(s.artworkUrl100, '600x600'),
-        description: s.collectionName ? `Del disco «${s.collectionName}».` : '',
-        url: s.trackViewUrl,
-        tags: ['cancion'],
-      }),
-    ),
-  ];
+  const [esSongs, enSongs, esAlbums, enAlbums] = await Promise.allSettled([
+    wiki(q, { lang: 'es', suffix: 'canción', kind: 'canción', limit: 5 }),
+    wiki(q, { lang: 'en', suffix: 'song', kind: 'canción', limit: 6 }),
+    wiki(q, { lang: 'es', suffix: 'álbum', kind: 'álbum', limit: 4 }),
+    wiki(q, { lang: 'en', suffix: 'album', kind: 'álbum', limit: 4 }),
+  ]);
+
+  const raw = [
+    ...(esSongs.value ?? []),
+    ...(enSongs.value ?? []),
+    ...(esAlbums.value ?? []),
+    ...(enAlbums.value ?? []),
+  ].filter(
+    (r) =>
+      MUSIC_RE.test(r.description) &&
+      !/desambiguaci|disambiguation|puede referirse|may refer to/i.test(`${r.url} ${r.description}`),
+  );
+
+  const byQid = new Map();
+  const merged = [];
+  for (const r of raw) {
+    const item = {
+      ...r,
+      creators: guessArtistFromText(r.description),
+      tags: [r.kind === 'álbum' ? 'album' : 'cancion'],
+    };
+    if (item.qid && byQid.has(item.qid)) {
+      const prev = byQid.get(item.qid);
+      if (!prev.cover && item.cover) prev.cover = item.cover;
+      if (!prev.year && item.year) prev.year = item.year;
+      if (!prev.creators.length && item.creators.length) prev.creators = item.creators;
+      continue;
+    }
+    if (item.qid) byQid.set(item.qid, item);
+    merged.push(item);
+  }
+
+  try {
+    return await enrichWithWikidata(merged, { creators: ['P175', 'P86'], genres: 'P136' });
+  } catch {
+    return merged;
+  }
 }
 
 // ---------- Wikidata ----------
@@ -183,10 +202,25 @@ async function enrichWithWikidata(results, spec, limits = { creators: 3, cast: 8
   return results.map((r) => {
     if (!r.qid || !entities[r.qid]) return r;
     const out = { ...r };
-    const es = entities[r.qid].labels?.es?.value;
+    const claims = entities[r.qid].claims ?? {};
+    const es = entities[r.qid].labels?.es?.value?.replace(/\s*\([^)]*\)$/, '');
     if (es) {
       out.originalTitle = r.title;
       out.title = es;
+    }
+    if (!out.year) {
+      const pubTime = claims.P577?.[0]?.mainsnak?.datavalue?.value?.time;
+      if (pubTime) out.year = year(pubTime);
+    }
+    if (r.kind === 'canción' || r.kind === 'álbum') {
+      const types = (claims.P31 ?? []).map((c) => c.mainsnak?.datavalue?.value?.id).filter(Boolean);
+      if (types.some((t) => ALBUM_QIDS.has(t))) {
+        out.kind = 'álbum';
+        out.tags = ['album'];
+      } else if (types.some((t) => SONG_QIDS.has(t))) {
+        out.kind = 'canción';
+        out.tags = ['cancion'];
+      }
     }
     for (const field of Object.keys(spec)) {
       const names = picks[r.qid][field]
@@ -291,8 +325,8 @@ async function wiki(q, { lang = 'es', suffix = '', kind = '', limit = 6 } = {}) 
       kind,
       title: p.title.replace(/\s*\([^)]*\)$/, ''),
       originalTitle: p.title.replace(/\s*\([^)]*\)$/, ''),
-      year: year(p.description),
-      cover: p.thumbnail?.source ?? null,
+      year: year(p.description) ?? year(p.extract),
+      cover: p.thumbnail?.source ? p.thumbnail.source.split('?')[0] : null,
       description: clip(p.extract || p.description || ''),
       url: `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(p.title.replace(/ /g, '_'))}`,
       qid: p.pageprops?.wikibase_item ?? null,
@@ -446,7 +480,7 @@ export async function lookup(container, q) {
   };
   return results
     .filter((r) => {
-      const k = `${norm(r.title)}|${r.year ?? ''}|${r.kind}`;
+      const k = `${norm(r.title)}|${r.year ?? ''}|${r.kind}|${norm(r.creators?.[0] ?? '')}`;
       if (!r.title || seen.has(k)) return false;
       seen.add(k);
       return true;

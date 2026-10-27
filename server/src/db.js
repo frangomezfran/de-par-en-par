@@ -42,7 +42,21 @@ export const VALID_MOODS = [
   'tranquilo',
   'energico',
   'divertido',
-  'valiente'
+  'valiente',
+  'reconfortante',
+  'motivador',
+  'euforico',
+  'adrenalinico',
+  'ansioso',
+  'tenso',
+  'cerebral',
+  'incomodo',
+  'oscuro',
+  'catartico',
+  'reflexivo',
+  'relajado',
+  'sociable',
+  'rebelde'
 ];
 
 export const VALID_STAGES = [

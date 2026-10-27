@@ -222,6 +222,7 @@ test('POST /api/items: cada dueño solo en su pieza, con galería, mp3 y privaci
       rating: '3.5',
       visibility: 'privado',
       specialDates: ['cumple-mariana'],
+      moods: ['reconfortante', 'sociable'],
     },
     {
       cover: [['tapa.jpg', 'image/jpeg']],
@@ -239,6 +240,7 @@ test('POST /api/items: cada dueño solo en su pieza, con galería, mp3 y privaci
   assert.equal(it.gallery.length, 3);
   assert.match(it.audio, /^\/media\/mariana\/peliculas\/audio-.*\.mp3$/);
   assert.deepEqual(it.cast, ['Audrey Tautou']);
+  assert.deepEqual(it.moods, ['reconfortante', 'sociable']);
 
   // notas: "Escribió" es quien la agrega; URLs de portada fuera de la lista se ignoran
   const note = await post({

@@ -35,7 +35,30 @@ export const VALID_VISIBILITY = ['publico', 'privado'];
 export const VALID_WEATHER = ['soleado', 'nublado', 'lluvioso', 'tormenta', 'nevado', 'niebla'];
 export const VALID_DAYTIME = ['diurno', 'nocturno', 'cualquiera'];
 export const VALID_SEASONS = ['verano', 'otono', 'invierno', 'primavera'];
-export const VALID_MOODS = ['alegre', 'tierno', 'nostalgico', 'melancolico', 'tranquilo', 'energico', 'divertido', 'valiente'];
+export const VALID_MOODS = [
+  'alegre',
+  'tierno',
+  'nostalgico',
+  'melancolico',
+  'tranquilo',
+  'energico',
+  'divertido',
+  'valiente',
+  'reconfortante',
+  'motivador',
+  'euforico',
+  'adrenalinico',
+  'ansioso',
+  'tenso',
+  'cerebral',
+  'incomodo',
+  'oscuro',
+  'catartico',
+  'reflexivo',
+  'relajado',
+  'sociable',
+  'rebelde',
+];
 export const VALID_STAGES = ['embarazo', 'bebe', 'primeros-anios', 'ninez', 'adolescencia', 'siempre'];
 export const VALID_SPECIAL_DATES = ['cumple-amelia', 'cumple-mariana', 'cumple-franco', 'navidad', 'anio-nuevo', 'halloween'];
 export const VALID_AUDIENCE = ['ATP', '+13', '+16', '+18'];
@@ -253,6 +276,7 @@ async function ensureDbReady(db) {
         db.prepare(`CREATE INDEX IF NOT EXISTS idx_items_room_container ON items (roomId, container)`),
         db.prepare(`CREATE INDEX IF NOT EXISTS idx_comments_item_id ON comments (itemId)`),
         db.prepare(`CREATE INDEX IF NOT EXISTS idx_likes_log_item_ip ON likes_log (item_id, ip)`),
+        db.prepare(`DELETE FROM comments WHERE author = 'Abuela Norma'`),
       ]);
 
       const countRow = await db.prepare('SELECT COUNT(*) as count FROM items').first();
@@ -1423,6 +1447,12 @@ export default {
   async fetch(request, env) {
     try {
       const url = new URL(request.url);
+
+      // Redirigir siempre http: a https: en entornos de producción
+      if (url.protocol === 'http:' && !url.hostname.includes('localhost') && !url.hostname.startsWith('127.')) {
+        url.protocol = 'https:';
+        return Response.redirect(url.toString(), 301);
+      }
       if (url.pathname === '/api' || url.pathname.startsWith('/api/')) {
         return await handleApi(request, env, url);
       }

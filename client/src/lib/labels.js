@@ -42,7 +42,21 @@ export const MOOD_LABELS = {
   tranquilo: 'Tranquilo',
   energico: 'Enérgico',
   divertido: 'Divertido',
-  valiente: 'Valiente'
+  valiente: 'Valiente',
+  reconfortante: 'Reconfortante',
+  motivador: 'Motivador',
+  euforico: 'Eufórico',
+  adrenalinico: 'Adrenalínico',
+  ansioso: 'Ansioso',
+  tenso: 'Tenso',
+  cerebral: 'Cerebral',
+  incomodo: 'Incómodo',
+  oscuro: 'Oscuro',
+  catartico: 'Catártico',
+  reflexivo: 'Reflexivo',
+  relajado: 'Relajado',
+  sociable: 'Sociable',
+  rebelde: 'Rebelde'
 };
 
 export const STAGE_LABELS = {

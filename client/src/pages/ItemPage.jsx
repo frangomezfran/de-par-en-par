@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, Navigate, useLocation, useNavigate, useParams } from 'react-router-dom'
 import ArchiveLayout from '../components/ArchiveLayout.jsx'
 import Cover from '../components/Cover.jsx'
@@ -6,7 +6,7 @@ import LikeButton from '../components/LikeButton.jsx'
 import Guestbook from '../components/Guestbook.jsx'
 import AddItemForm from '../components/AddItemForm.jsx'
 import { StarRating, starsText } from '../components/Stars.jsx'
-import { CONTAINER_VIEW, OTHER_ROOM, ROOM_CONTAINERS, ROOM_NAMES, canEdit, inventoryCodes, metaLine } from '../components/containerMeta.js'
+import { CONTAINER_VIEW, OTHER_ROOM, ROOM_CONTAINERS, ROOM_NAMES, canEdit, metaLine } from '../components/containerMeta.js'
 import {
   CONTAINERS,
   DAYTIME_LABELS,
@@ -197,7 +197,7 @@ export default function ItemPage() {
     }
   }, [item])
 
-  const code = useMemo(() => (item ? inventoryCodes(siblings.length ? siblings : [item]).get(item.id) : ''), [item, siblings])
+
 
   if (!valid) return <Navigate to={ROOM_NAMES[roomId] ? `/room/${roomId}` : '/'} replace />
   // URL vieja: se lleva a la dirección correcta
@@ -236,7 +236,7 @@ export default function ItemPage() {
 
   // Ficha: los datos finos (columna izquierda)
   const facts = [
-    ['N.º de inventario', code],
+
     ['Visibilidad', item.visibility === 'privado' ? 'Privado (solo Mariana y Franco)' : null],
     ['Tipo', item.tags.filter((t) => TAG_LABELS[t]).map((t) => TAG_LABELS[t]).join(', ')],
     ['Año', item.year],
@@ -293,7 +293,7 @@ export default function ItemPage() {
 
       <article className="detail">
         <div className="detail__text">
-          <p className="detail__code">{code}</p>
+
           <h1 className="detail__title">{item.title}</h1>
           {item.originalTitle && norm(item.originalTitle) !== norm(item.title) && <p className="detail__original">{item.originalTitle}</p>}
           <p className="detail__meta">{metaLine({ ...item, creators: isNote ? [author] : item.creators })}</p>

@@ -64,3 +64,5 @@ CREATE TABLE IF NOT EXISTS media_chunks (
 CREATE INDEX IF NOT EXISTS idx_items_room_container ON items (roomId, container);
 CREATE INDEX IF NOT EXISTS idx_comments_item_id ON comments (itemId);
 CREATE INDEX IF NOT EXISTS idx_likes_log_item_ip ON likes_log (item_id, ip);
+
+DELETE FROM comments WHERE author = 'Abuela Norma';
